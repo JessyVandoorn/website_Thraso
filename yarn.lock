@@ -1003,6 +1003,10 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
+bootstrap@^4.0.0-alpha.6:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0.tgz#ceb03842c145fcc1b9b4e15da2a05656ba68469a"
+
 boxen@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/boxen/-/boxen-0.5.1.tgz#5b73d8840eb7f3c8a155cbf69ed3ed68d4720014"
