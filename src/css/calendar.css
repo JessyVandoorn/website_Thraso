@@ -335,10 +335,10 @@
   background-color: #ad2121;
 }
 .event-info {
-  background-color: #1e90ff;
+  background-color: #de152a;
 }
 .event-warning {
-  background-color: #e3bc08;
+  background-color: #f5b04e;
 }
 .event-inverse {
   background-color: #1b1b1b;
@@ -495,7 +495,7 @@ span[data-cal-date]:hover {
   background-color: transparent;
 }
 #cal-slide-content a.event-item {
-  color: #ffffff;
+  color: black;
   font-weight: normal;
   line-height: 22px;
 }
