@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/calendar.css">
+  <title>Document</title>
+  <script>
+    WebFontConfig = {
+        google: {
+          families: ['Open Sans: 400, 700']
+          }
+        };
+        (function(d) {
+          var wf = d.createElement('script'),
+            s = d.scripts[0];
+          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+          wf.async = true;
+          s.parentNode.insertBefore(wf, s);
+        })(document);
+  </script>
+</head>
+<body>
+  <header class="lighterBlue">
+      <h1 class="h1 whiteText">Hsc Thraso</h1>
+      <nav>
+        <ul class="navigatie whiteText">
+          <li class="itemNav">home</li>
+          <li class="itemNav">clubinfo</li>
+          <li class="itemNav">leden</li>
+          <li class="itemNav">kalender</li>
+          <li class="itemNav">sponsor</li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <div id="calendar"></div>
+
+
+  </main>
+  <aside class="darkBlue updateAside aside">
+    <img src="assets/krul.png" alt="Thraso krul" width="193" height="254">
+    <div class="flexFooter">
+      <h2 class="h2 whiteText">contact us</h2>
+      <div class="social">
+        <img src="assets/fb.png" alt="Hsc Thraso on Facebook" width="47" height="47" class="facebook">
+        <img src="assets/email.png" alt="Email Thraso" width="47" height="47">
+      </div>
+      <form action="" class="form">
+        <input type="email" class="inputMail" placeholder="info@thraso.com">
+        <input type="submit" name="verstuur" value="verstuur" class="button whiteText">
+      </form>
+      <p class="tekst whiteText">senior Milan Vandermeulen: +32 471 137 217</p>
+      <p class="tekst whiteText">Schachtentemmer: +32 471 021 886</p>
+    </div>
+  </aside>
+  <footer class="lighterBlue updateFooter">
+    <p class="whiteText footerTekst">Hsc Thraso &copy; Copyright 2018</p>
+  </footer>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="js/vendor/underscore-min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="js/language/nl-NL.js"></script> -->
+  <script type="text/javascript" src="js/calendar.js"></script>
+  <script type="text/javascript">
+    var calendar = $("#calendar").calendar(
+      {
+        tmpl_path: "/tmpls/",
+        events_source: function () { return []; }
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after { /* stylelint-disable-line */
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Helvetica neue', Helvetica, Arial, sans-serif;
+  overflow: scroll;
+}
+
+.wf-active .h1 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+}
+
+.wf-active .imageDisplayNumber {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+
+.wf-active .itemNav {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.container {
+  width: 126rem;
+  margin: auto;
+}
+
+.h1 {
+  font-size: 3rem;
+}
+
+.whiteText {
+  color: white;
+}
+
+.navigatie {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.lighterBlue {
+  background-color: #3e3b7f;
+  height: 8.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.darkBlue {
+  background-color: #32327d;
+  height: 68.6rem;
+}
+
+.itemNav {
+  margin-right: 1rem;
+}
+
+.hiddenImages {
+  display: none;
+}
+
+.divHeader {
+  width: 104.8rem;
+  height: 55.2rem;
+}
+
+.displayImage {
+  width: 104.8rem;
+  height: 55.2rem;
+  border: solid white .3rem;
+  border-radius: 1rem;
+}
+
+.headerImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imageDisplayNumber {
+  text-decoration: line-through solid red;
+  margin-left: 1.5rem;
+}
+
+.marginNumbers {
+  margin-bottom: 2.4rem;
+}
+
+.h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 6rem;
+  margin-bottom: 5.5rem;
+}
+
+.gridActiviteiten {
+  display: grid;
+  grid-template:
+    'title . .'
+    'act1 act2 act3' max-content;
+  grid-gap: 2rem;
+}
+
+.title {
+  grid-area: title;
+}
+
+.activiteit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 32rem;
+  /* border-radius: .5rem;
+  border: solid grey .2rem; */
+}
+
+.act1 {
+  grid-area: act1;
+}
+
+.act2 {
+  grid-area: act2;
+}
+
+.act3 {
+  grid-area: act3;
+}
+
+.orangeTitle {
+  background-color: #f5b04e;
+  font-size: 2rem;
+  width: 32rem;
+  padding: 1rem;
+}
+
+.redBackground {
+  background-color: #de152a;
+  width: 32rem;
+  padding: 1rem;
+}
+
+.gridWat {
+  display: grid;
+  grid-template:
+    'title . . .'
+    'game cantus sport weekend' max-content;
+  grid-gap: 2rem;
+}
+
+.updateWat {
+  z-index: 1;
+  position: relative;
+}
+
+.updateActiviteit {
+  align-items: center;
+  width: 24rem;
+  height: 34rem;
+}
+
+.tekstWat {
+  z-index: 2;
+  position: relative;
+  bottom: 9rem;
+}
+
+.updateTitle {
+  bottom: 10rem;
+}
+
+.game {
+  grid-area: game;
+}
+
+.cantus {
+  grid-area: cantus;
+  height: 38.2rem;
+  margin-bottom: 9.5rem;
+}
+
+.sport {
+  grid-area: sport;
+}
+
+.weekend {
+  grid-area: weekend;
+}
+
+.updateAside {
+  height: 40.7rem;
+}
+
+.flexFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tekst {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+
+.inputMail {
+  border: solid .3rem white;
+  border-radius: .5rem;
+  margin-right: 1rem;
+  background-color: inherit;
+  height: 5.6rem;
+  width: 36.6rem;
+}
+
+.inputMail::placeholder {
+  color: white;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+}
+
+.button {
+  background-color: #de152a;
+  border: none;
+  border-radius: .5rem;
+  width: 14.8rem;
+}
+
+.updateFooter {
+  height: 6.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerTekst {
+  font-size: 1.4rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.facebook {
+  margin-right: 1rem;
+}
