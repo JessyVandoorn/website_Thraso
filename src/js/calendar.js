@@ -167,7 +167,7 @@ if(!String.prototype.formatNum) {
 	};
 
 	var defaults_extended = {
-		first_day: 2,
+		first_day: 0,
 		week_numbers_iso_8601: false,
 		holidays: {
 			// January 1
@@ -240,13 +240,14 @@ if(!String.prototype.formatNum) {
 		ms10: 'Nov',
 		ms11: 'Dec',
 
-		d0: 'Sunday',
-		d1: 'Monday',
-		d2: 'Tuesday',
-		d3: 'Wednesday',
-		d4: 'Thursday',
-		d5: 'Friday',
-		d6: 'Saturday'
+
+		d0: 'Monday',
+		d1: 'Tuesday',
+		d2: 'Wednesday',
+		d3: 'Thursday',
+		d4: 'Friday',
+		d5: 'Saturday',
+    d6: 'Sunday'
 	};
 
 	var browser_timezone = '';
