@@ -64,6 +64,7 @@ body {
 
 .itemNav {
   margin-right: 1rem;
+  text-decoration: none;
 }
 
 .hiddenImages {
@@ -125,6 +126,20 @@ body {
   width: 32rem;
   /* border-radius: .5rem;
   border: solid grey .2rem; */
+  filter: drop-shadow(0 0 .75rem grey);
+}
+
+.imageActiviteit {
+  width: 40rem;
+  height: 20rem;
+  z-index: 1;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.borderRadius {
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
 }
 
 .act1 {
@@ -142,13 +157,15 @@ body {
 .orangeTitle {
   background-color: #f5b04e;
   font-size: 2rem;
-  width: 32rem;
+  width: 40rem;
   padding: 1rem;
+  z-index: 2;
+  position: relative;
 }
 
 .redBackground {
   background-color: #de152a;
-  width: 32rem;
+  width: 40rem;
   padding: 1rem;
 }
 
@@ -167,36 +184,66 @@ body {
 
 .updateActiviteit {
   align-items: center;
-  width: 24rem;
+  width: 26.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  filter: drop-shadow(0 0 .75rem grey);
   height: 34rem;
 }
 
 .tekstWat {
   z-index: 2;
   position: relative;
-  bottom: 9rem;
+  bottom: -16rem;
+  text-align: center;
 }
 
 .updateTitle {
-  bottom: 10rem;
+  bottom: -14rem;
 }
 
 .game {
   grid-area: game;
+  background-image: url(/assets/sport.png);
+  background-repeat: no-repeat;
+  background-size: 26.5rem 21rem;
+}
+
+.GameNights {
+  bottom: -16rem;
+}
+
+.tekstGame {
+  bottom: -19rem;
 }
 
 .cantus {
   grid-area: cantus;
   height: 38.2rem;
   margin-bottom: 9.5rem;
+  background-image: url(/assets/cantus.png);
+  background-repeat: no-repeat;
+  background-size: 26.5rem 21rem;
 }
 
 .sport {
   grid-area: sport;
+  background-image: url(/assets/sport.png);
+  background-repeat: no-repeat;
+  background-size: 26.5rem 21rem;
 }
 
 .weekend {
   grid-area: weekend;
+  background-image: url(/assets/sport.png);
+  background-repeat: no-repeat;
+  background-size: 26.5rem 21rem;
+}
+
+.images {
+  z-index: 2;
+  position: relative;
+  top: 5rem;
 }
 
 .updateAside {
