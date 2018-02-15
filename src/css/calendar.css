@@ -334,12 +334,33 @@
 .event-important {
   background-color: #ad2121;
 }
+
 .event-info {
   background-color: #de152a;
+  width: 33rem;
+  height: 2.5rem;
+  color: white;
+  border: none;
 }
+
+.event-info::after {
+  content: attr(data-original-title);
+  padding: 1rem;
+}
+
 .event-warning {
   background-color: #f5b04e;
+  width: 33rem;
+  height: 2.5rem;
+  color: white;
+  border: none;
 }
+
+.event-warning::after {
+  content: attr(data-original-title);
+  padding: 1rem;
+}
+
 .event-inverse {
   background-color: #1b1b1b;
 }
@@ -512,4 +533,8 @@ a.cal-event-week {
 }
 .badge-important {
   background-color: #b94a48;
+}
+
+.cal-cell[data-cal-row="-day7"] {
+  display: none;
 }

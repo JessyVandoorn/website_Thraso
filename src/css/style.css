@@ -1,3 +1,5 @@
+@import 'reset';
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -10,12 +12,16 @@ html {
 
 body {
   font-family: 'Helvetica neue', Helvetica, Arial, sans-serif;
-  overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .wf-active .h1 {
   font-family: 'Open Sans';
   font-weight: 700;
+  text-decoration: none;
 }
 
 .wf-active .imageDisplayNumber {
@@ -37,6 +43,7 @@ body {
 
 .h1 {
   font-size: 3rem;
+  text-decoration: none;
 }
 
 .whiteText {
@@ -97,6 +104,10 @@ body {
 
 .marginNumbers {
   margin-bottom: 2.4rem;
+}
+
+.itemNav:hover {
+  color: #db1b31;
 }
 
 .h2 {
@@ -317,4 +328,8 @@ body {
 
 .facebook {
   margin-right: 1rem;
+}
+
+.calendar {
+  margin-bottom: 5rem;
 }
