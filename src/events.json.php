@@ -61,7 +61,7 @@
 			"url": "http://www.thraso.com/",
 			"class": "event-info",
 			"start": "1522440000000",
-			"end":   "1522461600000"
+			"end":   "1522440000000"
 		}, {
 			"id": "8",
 			"title": "Volkspelen",
@@ -75,7 +75,7 @@
 			"url": "http://www.thraso.com/",
 			"class": "event-info",
 			"start": "1523642400000",
-			"end":   "1523728800000"
+			"end":   "1523642400000"
 		}, {
 			"id": "10",
 			"title": "Verrassingsactiviteit",
