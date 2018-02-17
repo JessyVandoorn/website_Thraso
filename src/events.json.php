@@ -1,117 +1,114 @@
-{
-	"success": 1,
-	"result": [
-		{
-			"id": "0",
-			"title": "FauxFête",
-			"url": "https://www.facebook.com/events/1715554375162284/",
-			"class": "event-info",
-			"start": "1518829200000",
-			"end":   "1518915600000"
-		},
-		{
-			"id": "1",
-			"title": "Vriendjes- & Familiecantus",
-			"url": "http://www.thraso.com/",
-			"class": "event-warning",
-			"start": "1518224400000",
-			"end":   "1518310800000"
-		},
-    {
-			"id": "2",
-			"title": "Dessert avond",
-			"url": "http://www.thraso.com/",
-			"class": "event-info",
-			"start": "1519502400000",
-			"end":   "1519516800000"
-		},
-    {
-			"id": "3",
-			"title": "Karaoké",
-			"url": "http://www.thraso.com/",
-			"class": "event-info",
-			"start": "1520107200000",
-			"end":   "1520121600000"
-		},
-    {
-			"id": "4",
-			"title": "Schachtenactiviteit",
-			"url": "http://www.thraso.com/",
-			"class": "event-info",
-			"start": "1520710200000",
-			"end":   "1520731800000"
-		},
-    {
-			"id": "5",
-			"title": "Restjes & Rad van fortuin cantus",
-			"url": "http://www.thraso.com/",
-			"class": "event-warning",
-			"start": "1521315000000",
-			"end":   "1521336600000"
-		}, {
-			"id": "6",
-			"title": "Karten",
-			"url": "http://www.thraso.com/",
-			"class": "event-info",
-			"start": "1521919800000",
-			"end":   "1521934200000"
-		}, {
-			"id": "7",
-			"title": "Galabal Centaura",
-			"url": "http://www.thraso.com/",
-			"class": "event-info",
-			"start": "1522440000000",
-			"end":   "1522440000000"
-		}, {
-			"id": "8",
-			"title": "Volkspelen",
-			"url": "http://www.thraso.com/",
-			"class": "event-info",
-			"start": "1523125800000",
-			"end":   "1523143800000"
-		}, {
-			"id": "9",
-			"title": "24u van Thraso",
-			"url": "http://www.thraso.com/",
-			"class": "event-info",
-			"start": "1523642400000",
-			"end":   "1523642400000"
-		}, {
-			"id": "10",
-			"title": "Verrassingsactiviteit",
-			"url": "http://www.thraso.com/",
-			"class": "event-info",
-			"start": "1524335400000",
-			"end":   "1524353400000"
-		}, {
-			"id": "11",
-			"title": "Wisselcantus",
-			"url": "http://www.thraso.com/",
-			"class": "event-warning",
-			"start": "1524940200000",
-			"end":   "1524958200000"
-		}, {
-			"id": "12",
-			"title": "Beduveld",
-			"url": "http://www.thraso.com/",
-			"class": "event-info",
-			"start": "1525550400000",
-			"end":   "1525636800000"
-		},{
-			"id": "13",
-			"title": "Hockey",
-			"url": "http://www.thraso.com/",
-			"class": "event-info",
-			"start": "1526149800000",
-			"end":   "1526167800000"
-		}, {
-			"id": "14",
-			"title": "Ontgroenings- & verkiezingscantus",
-			"url": "http://www.thraso.com/",
-			"class": "event-warning",
-			"start": "1530383400000",
-			"end":   "1530408600000"
-		}
+<?php
+date_default_timezone_set('UTC');
 
-	]
+function iCalDecoder($file)
+{
+  $ical = file_get_contents($file);
+
+  preg_match_all('/(BEGIN:VEVENT.*?END:VEVENT)/si', $ical, $result, PREG_PATTERN_ORDER);
+  for ($i = 0; $i < count($result[0]); $i++) {
+    $calLine = $result[0][$i];
+
+
+
+    // Get the start
+    $calStartDate = getInbetween($calLine, "DTSTART", "DTEND");
+    $calStartDate = getInbetween($calStartDate, "TZID=Europe/Brussels:", " ");
+    $calStartDate = getInbetween($calStartDate, ":", "Z");
+    $SDstart = (strtotime($calStartDate) * 1000);
+
+    //var_dump($calStartDate);
+
+    // Get the end
+    $calEndDate = getInbetween($result[0][$i], "DTEND", "DTSTAMP");
+    $calEndDate = getInbetween($calEndDate, ":", "Z");
+    $SDend = (strtotime($calEndDate) * 1000) - 72001000;
+
+    // Get the organisation
+    $calSummary = getInbetween($calLine, "SUMMARY:", "\r\nTRANSP");
+    $summaryArray = explode(" | ", $calSummary);
+
+    $SDorganisator = "Ongekend";
+    if (count($summaryArray) > 1) {
+      switch(reset($summaryArray)){
+        case 'SD':
+          $SDorganisator = "Scapa Divers";
+          break;
+
+        case 'HF':
+          $SDorganisator = "Haaifive vzw";
+          break;
+
+        case 'SDHF':
+          $SDorganisator = "Scapa Divers & Haaifive vzw";
+          break;
+
+        case 'DT':
+          $SDorganisator = "Duikschool Tarcy";
+          break;
+      }
+    }
+
+    $SDid = $i;
+    $SDtitle = end($summaryArray);
+
+    $SDclass = "event-warning";
+    $SDurl = '#';
+
+    if (preg_match('/DESCRIPTION:(.*)LAST-MODIFIED/si', $result[0][$i], $regs)) {
+      $description = $regs[1];
+      if(strpos($description, 'ype:')){
+        $type = preg_replace('/\s*/', '', reset(explode("\\n", end(explode("ype: ", $regs[1])))));
+
+        switch($type){
+          case "training":
+            $SDclass = "event-info";
+            break;
+
+          case "duik":
+            $SDclass = "event-important";
+            break;
+
+          case "info":
+            $SDclass = "event-inverse";
+            break;
+        }
+      }
+
+      if(strpos($description, 'rl:')){
+        $file = 'http://' . preg_replace('/\s*/', '', reset(explode("\\n", end(explode("rl: ", $regs[1])))));
+        $file_headers = @get_headers($file);
+        if($file_headers != NULL && $file_headers[0] != 'HTTP/1.1 404 Not Found') {
+          $SDurl = $file;
+          $SDtitle .= " <i class='fa fa-external-link' aria-hidden='true' > </i>";
+        }
+      }
+    }
+
+
+
+    $eventArray[] = array(
+      "id"            => (string) $SDid,
+      "title"         => $SDtitle,
+      "organisator"   => $SDorganisator,
+      "url"           => $SDurl,
+      "class"         => $SDclass,
+      "start"         => $SDstart,
+      "end"           => $SDend
+    );
+  }
+
+  $preparedArray = array(
+    "success"   => 1,
+    "result"    => $eventArray
+  );
+
+  return json_encode($preparedArray);
 }
+
+function getInbetween($string, $begin, $end){
+  return end(explode($begin, reset(explode($end, $string))));
+}
+
+echo iCalDecoder('https://calendar.google.com/calendar/ical/jouw-link-naar-de-ical-van-de-club.ics');
+?>

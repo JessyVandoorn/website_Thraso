@@ -344,7 +344,7 @@
 }
 
 .event-info::after {
-  content: attr(data-original-title);
+  content: '';
   padding: 1rem;
   text-decoration: none;
 }
@@ -358,7 +358,7 @@
 }
 
 .event-warning::after {
-  content: attr(data-original-title);
+  content: '';
   padding: 1rem;
   text-decoration: none;
 }
