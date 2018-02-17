@@ -143,7 +143,7 @@ h3 {
   width: 32rem;
   /* border-radius: .5rem;
   border: solid grey .2rem; */
-  filter: drop-shadow(0 0 .75rem grey);
+  filter: drop-shadow(0 0 .5rem black);
 }
 
 .imageActiviteit {
@@ -204,7 +204,7 @@ h3 {
   width: 26.5rem;
   background-color: white;
   border-radius: 1rem;
-  filter: drop-shadow(0 0 .75rem grey);
+  filter: drop-shadow(0 0 .5rem black);
   height: 34rem;
 }
 
@@ -216,7 +216,9 @@ h3 {
 }
 
 .updateTitle {
-  bottom: -14rem;
+  bottom: -13rem;
+  font-size: 1.4rem;
+  color: black;
 }
 
 .game {

@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hsc Thraso</title>
-  <script>
-    WebFontConfig = {
-        google: {
-          families: ['Open Sans: 400, 700']
-          }
-        };
-        (function(d) {
-          var wf = d.createElement('script'),
-            s = d.scripts[0];
-          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-          wf.async = true;
-          s.parentNode.insertBefore(wf, s);
-        })(document);
-  </script>
-</head>
-
-<body>
-  <header>
-    <div class="lighterBlue">
-      <h1><a href="index.html" class="h1 whiteText">Hsc Thraso</a></h1>
-      <nav>
-        <ul class="navigatie whiteText">
-          <li><a href="index.html" class="itemNav whiteText">home</a></li>
-          <li><a href="" class="itemNav whiteText">clubinfo</a></li>
-          <li><a href="" class="itemNav whiteText">leden</a></li>
-          <li><a href="kalender.html" class="itemNav whiteText">kalender</a></li>
-          <li><a href="" class="itemNav whiteText">sponsor</a></li>
-        </ul>
-      </nav>
-    </div>
     <section class="headerImages darkBlue">
       <ul class="whiteText">
         <li class="imageDisplayNumber marginNumbers">01</li>
@@ -44,35 +7,33 @@
         <li class="itemNav marginNumbers">04</li>
       </ul>
       <div class="divHeader">
-        <img id="01" src="assets/artboard.jpg" alt="Fauxfête" width="1920" height="1080" class="displayImage jsclass">
-        <img id="02" src="assets/beverenkermis2017.jpg" alt="beverenkermis2017" width="1577" height="675" class="hiddenImages jsclass">
-        <img id="03" src="assets/cocktailiciouspsd.png" alt="cocktailicious" class="hiddenImages jsclass">
-        <img id="04" src="assets/snooker.jpg" alt="snooker activiteit" width="2000" height="1000" class="hiddenImages jsclass">
+        <img id="01" src="assets/img/artboard.jpg" alt="Fauxfête" width="1920" height="1080" class="displayImage jsclass">
+        <img id="02" src="assets/img/beverenkermis2017.jpg" alt="beverenkermis2017" width="1577" height="675" class="hiddenImages jsclass">
+        <img id="03" src="assets/img/cocktailiciouspsd.png" alt="cocktailicious" class="hiddenImages jsclass">
+        <img id="04" src="assets/img/snooker.jpg" alt="snooker activiteit" width="2000" height="1000" class="hiddenImages jsclass">
       </div>
     </section>
-  </header>
-  <main class="container">
     <article class="gridActiviteiten">
       <header class="title">
-        <h2 class="h2">Belangrijke activiteiten</h2>
+        <h2 class="h2 whiteText">Belangrijke activiteiten</h2>
       </header>
       <section class="activiteit act1">
 
-        <img src="assets/bowling.jpg" alt="bowling" width="1800" height="900" class="imageActiviteit">
+        <img src="assets/img/bowling.jpg" alt="bowling" width="1800" height="900" class="imageActiviteit">
         <h3 class="orangeTitle whiteText">SchachtenActiviteit</h3>
         <p class="redBackground whiteText borderRadius">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </section>
       <section class="act2 activiteit">
-        <img src="assets/galabal.jpg" alt="galabal centaura" width="1920" height="1080" class="imageActiviteit">
+        <img src="assets/img/galabal.jpg" alt="galabal centaura" width="1920" height="1080" class="imageActiviteit">
         <h3 class="orangeTitle whiteText">Galabal Centaura</h3>
         <p class="redBackground whiteText borderRadius">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </section>
       <section class="act3 activiteit">
-        <img src="assets/10986674_10205312114375954_8445221103928683737_o.jpg" alt="ontgroenings en verkiezingscantus" width="2048" height="1361" class="imageActiviteit">
+        <img src="assets/img/10986674_10205312114375954_8445221103928683737_o.jpg" alt="ontgroenings en verkiezingscantus" width="2048" height="1361" class="imageActiviteit">
         <h3 class="orangeTitle whiteText">Ontgroenings- & verkiezingscantus</h3>
         <p class="redBackground whiteText borderRadius">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -81,53 +42,30 @@
     </article>
     <article class="gridWat">
       <header class="title">
-        <h2 class="h2 updateWat">Wat doen we</h2>
+        <h2 class="h2 updateWat whiteText">Wat doen we</h2>
       </header>
         <section class="activiteit updateActiviteit game">
-          <img src="assets/game.png" alt="gamenights" width="109" height="77" class="images">
+          <img src="assets/img/game.png" alt="gamenights" width="109" height="77" class="images">
           <h3 class="tekstWat updateTitle GameNights">GameNights</h3>
           <p class="tekstWat tekstGame">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </section>
         <section class="activiteit updateActiviteit cantus">
-          <img src="assets/beer.png" alt="cantus" width="84" height="104" class="images">
+          <img src="assets/img/beer.png" alt="cantus" width="84" height="104" class="images">
           <h3 class="tekstWat updateTitle">Cantus</h3>
           <p class="tekstWat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </section>
         <section class="sport activiteit updateActiviteit">
-          <img src="assets/vent.png" alt="sport" width="95" height="102" class="images">
+          <img src="assets/img/vent.png" alt="sport" width="95" height="102" class="images">
           <h3 class="tekstWat updateTitle">Sport</h3>
           <p class="tekstWat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </section>
         <section class="activiteit updateActiviteit weekend">
-          <img src="assets/weekend.png" alt="clubweekend" width="119" height="104" class="images">
+          <img src="assets/img/weekend.png" alt="clubweekend" width="119" height="104" class="images">
           <h3 class="tekstWat updateTitle">Clubweekend</h3>
           <p class="tekstWat">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </section>
     </article>
-  </main>
-  <aside class="darkBlue updateAside aside">
-    <img src="assets/krul.png" alt="Thraso krul" width="193" height="254">
-    <div class="flexFooter">
-      <h2 class="h2 whiteText">contact us</h2>
-      <div class="social">
-        <a href="https://www.facebook.com/ThrasoHSC/"><img src="assets/fb.png" alt="Hsc Thraso on Facebook" width="47" height="47" class="facebook"></a>
-        <a href="mailto:info@thraso.com"><img src="assets/email.png" alt="Email Thraso" width="47" height="47"></a>
-      </div>
-      <form action="" class="form">
-        <input type="email" class="inputMail" placeholder="info@thraso.com">
-        <input type="submit" name="verstuur" value="verstuur" class="button whiteText">
-      </form>
-      <p class="tekst whiteText">senior Milan Vandermeulen: +32 471 137 217</p>
-      <p class="tekst whiteText">Schachtentemmer: +32 471 021 886</p>
-    </div>
-  </aside>
-  <footer class="lighterBlue updateFooter">
-    <p class="whiteText footerTekst">Hsc Thraso &copy; Copyright 2018</p>
-  </footer>
-</body>
-
-</html>

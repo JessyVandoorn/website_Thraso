@@ -21,7 +21,7 @@ const commonConfig = merge([
     entry: [path.join(PATHS.src, "css/style.css"), path.join(PATHS.src, "js/script.js")],
     output: {
       path: PATHS.dist,
-      filename: `js/script.[hash].js`
+      filename: `js/script.js`
     },
     module: {
       rules: [
@@ -79,11 +79,6 @@ const commonConfig = merge([
         }
       ]
     },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: "./src/index.html"
-      })
-    ]
   }
 ]);
 
