@@ -499,9 +499,9 @@ a.cal-event-week {
   background-color: #b94a48;
 }
 
-.cal-cell[data-cal-row="-day7"] {
+/* .cal-cell[data-cal-row="-day7"] {
   display: none;
-}
+} */
 
 .btn-primary {
   border: none;

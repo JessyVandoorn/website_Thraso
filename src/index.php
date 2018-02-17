@@ -15,6 +15,14 @@ $routes = array(
     'controller' => 'Home',
     'action' => 'index'
   ),
+  'leden' => array(
+    'controller' => 'Home',
+    'action' => 'leden'
+  ),
+  'sponsor' => array(
+    'controller' => 'Sponsor',
+    'action' => 'sponsor'
+  )
 );
 
 if(empty($_GET['page'])) {

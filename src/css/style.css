@@ -223,7 +223,7 @@ h3 {
 
 .game {
   grid-area: game;
-  background-image: url(/assets/sport.png);
+  background-image: url(/assets/img/sport.png);
   background-repeat: no-repeat;
   background-size: 26.5rem 21rem;
 }
@@ -240,21 +240,21 @@ h3 {
   grid-area: cantus;
   height: 38.2rem;
   margin-bottom: 9.5rem;
-  background-image: url(/assets/cantus.png);
+  background-image: url(/assets/img/cantus.png);
   background-repeat: no-repeat;
   background-size: 26.5rem 21rem;
 }
 
 .sport {
   grid-area: sport;
-  background-image: url(/assets/sport.png);
+  background-image: url(/assets/img/sport.png);
   background-repeat: no-repeat;
   background-size: 26.5rem 21rem;
 }
 
 .weekend {
   grid-area: weekend;
-  background-image: url(/assets/sport.png);
+  background-image: url(/assets/img/sport.png);
   background-repeat: no-repeat;
   background-size: 26.5rem 21rem;
 }
@@ -361,4 +361,51 @@ h3 {
 .wf-active .cantusMarge {
   font-family: 'Open Sans';
   font-size: 1.4rem;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.gridLeden {
+  display: grid;
+  grid-template:
+    '. . . .' .5rem
+    '. preasidium pro leden' 42rem
+    '. erelid . .' min-content
+    '. schachten . .';
+  grid-gap: 1rem;
+}
+
+.preasidium {
+  grid-area: preasidium;
+}
+
+.pro {
+  grid-area: pro;
+  grid-row: 2 / span 4;
+}
+
+.leden {
+  grid-area: leden;
+  grid-row: 2 / span 4;
+}
+
+.erelid {
+  grid-area: erelid;
+}
+
+.schachten {
+  grid-area: schachten;
+}
+
+.updateLeden {
+  height: auto;
+  padding: 2rem;
+  margin-bottom: 1rem;
 }
