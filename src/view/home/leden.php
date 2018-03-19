@@ -10,12 +10,12 @@
       <li><b>Praeses</b>: Milan Vandermeulen</li>
       <li><b>Vice-Praeses</b>: Wannes Benoit</li>
       <li><b>Quaestor</b>: Lenny Verscheure</li>
+      <li><b>Cantor</b>: Nele Vanoverbeke</li>
       <li><b>Scriptor</b>: Zana op 't Roodt</li>
-      <li><b>Schachtentemmer</b>: Diederik Vermeersch</li>
       <li><b>PR</b>: Jessy Vandoorn</li>
       <li><b>Cultuur</b>: Jannes Roman</li>
       <li><b>Feest</b>: Thijs Vandorpe</li>
-      <li><b>Cantor</b>: Nele Vanoverbeke</li>
+      <li><b>Schachtentemmer</b>: Diederik Vermeersch</li>
     </ul>
   </section>
   <section class="erelid updateActiviteit updateLeden">

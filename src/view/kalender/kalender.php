@@ -11,11 +11,12 @@
       <div class="page-header whiteText">
         <p class="cantusMarge"><span class="event-warning marginKleur"></span>Cantus</p>
         <p class="cantusMarge"><span class="event-info marginKleur"></span>Activiteit</p>
-        <h3></h3>
+        <h3>Kalender</h3>
       </div>
     </div>
 
     <div class="row">
-      <div class="span9">
-        <div id="calendar" class="calendar"></div>
-      </div>
+                <div class="col-lg-12">
+                    <div id="calendar"></div>
+                </div>
+            </div>
