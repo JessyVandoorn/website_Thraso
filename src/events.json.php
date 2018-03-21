@@ -28,7 +28,7 @@ function iCalDecoder($file)
     $calSummary = getInbetween($calLine, "SUMMARY:", "\r\nTRANSP");
     $summaryArray = explode(" | ", $calSummary);
 
-    $SDorganisator = "Hsc Thraso";
+    $SDorganisator = "Thraso";
 
     $SDid = $i;
     $SDtitle = end($summaryArray);

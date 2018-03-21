@@ -76,6 +76,7 @@
   <script type="text/javascript" src="js/app.js"></script>
   <script type="text/javascript">
     		var disqus_shortname = 'hscthraso'; // required: replace example with your forum shortname
+        var disqus_url = 'http://www.thraso.com';
     		(function() {
     			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
