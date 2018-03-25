@@ -1,5 +1,5 @@
 {
-  "name": "majorIII",
+  "name": "website_Thraso",
   "version": "1.0.0",
   "main": "index.js",
   "description": "",
@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "imagemin-mozjpeg": "^7.0.0",
+    "node-google-calendar": "^1.1.1",
     "webpack-plugin-critical": "^1.0.0",
     "yarn": "^1.3.2"
   }

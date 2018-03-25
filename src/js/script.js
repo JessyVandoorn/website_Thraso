@@ -2,6 +2,9 @@
   let currentNumber = document.querySelector(`.imageDisplayNumber`);
   let numbers = [];
   const images = document.querySelectorAll(`.jsclass`);
+  let leden = [];
+  const $wie = document.querySelector(`.wie`);
+  const $praesidium = document.querySelector(`.preasidium`);
 
   const handleMouseOver = e => {
     if(currentNumber !== e.currentTarget){
@@ -44,10 +47,37 @@
     e.classList.add(`imageDisplayNumber`);
   };
 
+  const parse = data => {
+    console.log(data);
+    leden = data;
+    leden.forEach(lid => createPraesidium(lid));
+  }
+
+  const createPraesidium = lid => {
+    console.log(lid);
+    const $div = document.createElement(`div`);
+    const $titel = document.createElement(`p`);
+    const $naam = document.createElement(`p`);
+
+    $titel.textContent = `${lid.titel}`;
+    $naam.textContent = `${lid.naam}`;
+
+    $div.appendChild($titel);
+    $div.appendChild($naam);
+
+    $wie.appendChild($div);
+    $praesidium.appendChild($wie);
+  }
+
   const init = () => {
       numbers = document.querySelectorAll(`.marginNumbers`);
       console.log(numbers);
       numbers.forEach(number => number.addEventListener(`mouseover`, handleMouseOver));
+
+      const url = "../assets/data/personen.json";
+      fetch(url)
+        .then(r => r.json())
+        .then(data => parse(data));
 }
     init();
 
