@@ -70,6 +70,7 @@
     $div.appendChild($titel);
     $div.appendChild($naam);
     $div.appendChild($img);
+    $div.classList.add(`praesidumFoto`);
 
     $wie.appendChild($div);
     $praesidium.appendChild($wie);

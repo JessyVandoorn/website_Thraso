@@ -429,4 +429,12 @@ h3 {
   border-radius: 100%;
   height: auto;
   /* width: 90%; */
+  margin-bottom: 1rem;
+}
+
+.praesidumFoto {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-right: 2rem;
 }

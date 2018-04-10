@@ -30,7 +30,7 @@
       <nav>
         <ul class="navigatie whiteText">
           <li><a href="index.php" class="itemNav whiteText">home</a></li>
-          <li><a href="" class="itemNav whiteText">clubinfo</a></li>
+          <li><a href="index.php?page=clubinfo" class="itemNav whiteText">clubinfo</a></li>
           <li><a href="index.php?page=leden" class="itemNav whiteText">leden</a></li>
           <li><a href="index.php?page=kalender" class="itemNav whiteText">kalender</a></li>
           <li><a href="index.php?page=sponsor" class="itemNav whiteText">sponsor</a></li>
