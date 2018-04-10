@@ -1,27 +1,48 @@
 [
      {
          "titel": "preases",
-        "naam": "Milan Vandermeulen"
+        "naam": "Milan Vandermeulen",
+        "img": "../assets/img/milan.jpg"
     },
     {
         "titel": "cantor",
-       "naam": "Nele Vanoverbeke"
+       "naam": "Nele Vanoverbeke",
+       "img": "../assets/img/nele.jpg"
    },
    {
     "titel": "vice",
-   "naam": "Wannes Benoit"
+   "naam": "Wannes Benoit",
+   "img": "../assets/img/jannes.jpg"
     }, 
     {
         "titel": "quastor",
-       "naam": "Lenny Verscheure"
+       "naam": "Lenny Verscheure",
+       "img": "../assets/img/lenny.jpg"
    }, 
    {
     "titel": "Scriptor",
-   "naam": "Zana Op't Roodt"
+   "naam": "Zana Op't Roodt",
+   "img": "../assets/img/zana.jpg"
 },
 {
     "titel": "P.R",
-   "naam": "Jessy Vandoorn"
+   "naam": "Jessy Vandoorn",
+   "img": "../assets/img/jessy.jpg"
+}, 
+{
+    "titel": "Sport",
+    "naam": "Jannes Roman",
+    "img": "../assets/img/jannes2.jpg"
+}, 
+{
+    "titel": "Schachtentemmer",
+    "naam": "Diederik Vermeersch",
+    "img": "../assets/img/jannes2.jpg"
+}, 
+{
+    "titel": "Feest",
+    "naam": "Thijs Vandorpe",
+    "img": "../assets/img/jannes2.jpg"
 }
    
 ]

@@ -58,12 +58,18 @@
     const $div = document.createElement(`div`);
     const $titel = document.createElement(`p`);
     const $naam = document.createElement(`p`);
+    const $img = document.createElement(`img`);
 
     $titel.textContent = `${lid.titel}`;
     $naam.textContent = `${lid.naam}`;
+    $img.setAttribute(`src`, `${lid.img}`);
+    $img.setAttribute(`width`, `100`);
+    // $img.setAttribute(`height`, `100`);
+    $img.classList.add(`imagePreasidium`);
 
     $div.appendChild($titel);
     $div.appendChild($naam);
+    $div.appendChild($img);
 
     $wie.appendChild($div);
     $praesidium.appendChild($wie);

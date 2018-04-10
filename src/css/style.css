@@ -424,3 +424,9 @@ h3 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
+.imagePreasidium {
+  border-radius: 100%;
+  height: auto;
+  /* width: 90%; */
+}
