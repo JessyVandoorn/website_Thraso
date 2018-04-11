@@ -4,6 +4,7 @@ date_default_timezone_set('UTC');
 function iCalDecoder($file)
 {
   $ical = file_get_contents($file);
+  // var_dump($file);
 
   preg_match_all('/(BEGIN:VEVENT.*?END:VEVENT)/si', $ical, $result, PREG_PATTERN_ORDER);
   for ($i = 0; $i < count($result[0]); $i++) {
@@ -28,7 +29,7 @@ function iCalDecoder($file)
     $calSummary = getInbetween($calLine, "SUMMARY:", "\r\nTRANSP");
     $summaryArray = explode(" | ", $calSummary);
 
-    $SDorganisator = "Hsc Thraso";
+    $SDorganisator = "thraso";
 
     $SDid = $i;
     $SDtitle = end($summaryArray);
@@ -43,11 +44,11 @@ function iCalDecoder($file)
 
         switch($type){
           case "cantus":
-            $SDclass = "event-info";
+            $SDclass = "event-warning";
             break;
 
           case "activiteit":
-            $SDclass = "event-important";
+            $SDclass = "event-info";
             break;
         }
       }

@@ -54,8 +54,95 @@
         <a href="https://www.facebook.com/ThrasoHSC/"><img src="assets/img/fb.png" alt="Hsc Thraso on Facebook" width="47" height="47" class="facebook"></a>
         <a href="mailto:info@thraso.com"><img src="assets/img/email.png" alt="Email Thraso" width="47" height="47"></a>
       </div>
-      <form action="" class="form">
-        <input type="email" class="inputMail" placeholder="info@thraso.com">
+    <?php
+    error_reporting(E_ALL);
+    // functie spamcheck
+    function spamcheck($field)
+      {
+      //filter_var() sanitizes the e-mail
+      //address using FILTER_SANITIZE_EMAIL
+      $field=filter_var($field, FILTER_SANITIZE_EMAIL);
+     
+      //filter_var() validates the e-mail
+      //address using FILTER_VALIDATE_EMAIL
+      if(filter_var($field, FILTER_VALIDATE_EMAIL))
+        {
+        return TRUE;
+        }
+      else
+        {
+        return FALSE;
+        }
+      }
+    if($_SERVER['REQUEST_METHOD'] == 'POST') 
+    {  
+     
+    // definieren variabelen
+    $ontvanger = 'info@thraso.com'; // HIEW JOUW EMAIL INVULLEN
+    $onderwerp_email = "Contactformulier"; // onderwerp wat in de email te zien is; tussen de "" evt zelf veranderen zoals je wilt
+    $naam = $_POST['email'];
+    $bericht = $_POST['tekst']; 
+     
+     
+    // headers opmaken
+    $headers  = 'MIME-Version: 1.0';
+    $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+    $headers .= 'From: '.$naam;
+     
+     
+    // body voor de email opmaken
+    $body = "";
+    $body .= "Naam: ";
+    $body .= $naam;
+    $body .= "\n";
+
+    $body .= "Bericht: ";
+    $body .= $bericht;
+    $body .= "\n";
+    // verwerking input checkbox
+    // if(isset($_POST['newsletter']) &&
+    //    $_POST['newsletter'] == 'yes')
+    // {
+    //    $body .= "Nieuwsbrief: Ja";
+    //    $body .= "\n";
+    // }
+    // else
+    // {
+    //     $body .= "Nieuwsbrief: Nee";
+    //     $body .= "\n";
+    // }
+    // mailcheck, wordt later gechecked
+    $mailcheck = spamcheck($_POST['email']);
+     
+    // checken of een robot ons formulier bezoekt  
+    if($_POST['robot'] != 'test_spambot') {
+        die();				    
+    } 
+    //check of email geldig is en geldige input is geleverd
+     
+    elseif ($mailcheck==FALSE) {
+        echo 'Ongeldige input emailveld<br /><br />';
+    }
+     
+    else {
+     
+    // email verzenden 
+    $formsent = mail($ontvanger, $onderwerp_email, $body, $headers);
+     
+    // echo's als email is verzonden
+    if ($formsent){
+      echo 'Uw bericht is successvol verstuurd!<br /><br />'; 
+    }
+    else{
+      echo 'Sorry, maar er is iets misgegaan met het versturen, probeer het later nog eens.'; 
+        }
+      }
+    }
+    ?>
+      <form action="" method="post" class="form">
+        <input type="hidden" name="robot" value="test_spambot">
+        <input type="email" class="inputMail" placeholder="info@thraso.com" name="email">
+        <input type="text" class="inputMail" placeholder="typ hier je tekst" name="tekst">
         <input type="submit" name="verstuur" value="verstuur" class="button whiteText">
       </form>
       <p class="tekst whiteText">senior Milan Vandermeulen: +32 471 137 217</p>

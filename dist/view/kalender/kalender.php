@@ -1,22 +1,23 @@
-<div class="page-header">
+            <div class="page-header">
+                <div class="new-push"></div>
+                <div class="pull-right form-inline">
+                    <div class="btn-group">
+                        <button class="btn btn-default" data-calendar-nav="prev">&lt;&lt; Vorige</button>
+                        <button class="btn btn-default" data-calendar-nav="today">Vandaag</button>
+                        <button class="btn btn-default" data-calendar-nav="next">Volgende &gt;&gt;</button>
+                    </div>
+                </div>
 
-      <div class="pull-right form-inline">
-        <div class="btn-group">
-          <button class="btn btn-primary" data-calendar-nav="prev"><</button>
-          <button class="btn btn-warning" data-calendar-view="week">Week</button>
-          <button class="btn btn-warning active" data-calendar-view="month">Maand</button>
-          <button class="btn btn-primary" data-calendar-nav="next">></button>
-        </div>
-      </div>
-      <div class="page-header whiteText">
-        <p class="cantusMarge"><span class="event-warning marginKleur"></span>Cantus</p>
-        <p class="cantusMarge"><span class="event-info marginKleur"></span>Activiteit</p>
-        <h3>Kalender</h3>
-      </div>
-    </div>
-
-    <div class="row">
+                <h3>Kalender</h3>
+                
+            </div>
+            <p><span class="event-info marginKleur">Activiteit</span>, <span class="event-warning marginKleur">Cantus</span>.</p>
+            <div class="row">
                 <div class="col-lg-12">
                     <div id="calendar"></div>
                 </div>
             </div>
+
+            
+
+<!-- <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mm48m2stj1c0jlcj0j3q4o0ud8%40group.calendar.google.com&amp;color=%23b90e28&amp;ctz=Europe%2FBrussels" style="display:none" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->

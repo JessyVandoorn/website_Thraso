@@ -1,12 +1,11 @@
 
-<div>
+<div class="container">
   <p>Indien er info is die niet correct is, gelieve een mail te sturen naar <a href="mailto:info@thraso.com">info@thraso.com</a>.</p>
 </div>
 </div>
-<article class="gridLeden">
-  <section class="preasidium updateActiviteit updateLeden">
-    <h2>Praesidium</h2>
-    <ul>
+<section class="preasidium updateActiviteit updateLeden container">
+    <h2 class="titelLeden">Praesidium</h2>
+    <!-- <ul>
       <li><b>Praeses</b>: Milan Vandermeulen</li>
       <li><b>Vice-Praeses</b>: Wannes Benoit</li>
       <li><b>Quaestor</b>: Lenny Verscheure</li>
@@ -16,14 +15,19 @@
       <li><b>Cultuur</b>: Jannes Roman</li>
       <li><b>Feest</b>: Thijs Vandorpe</li>
       <li><b>Schachtentemmer</b>: Diederik Vermeersch</li>
-    </ul>
+    </ul> -->
+    <div class="wie">
+
+    </div>
   </section>
+<article class="gridLeden container">
+  
   <section class="erelid updateActiviteit updateLeden">
-    <h2>Erelid</h2>
+    <h2 class="titelLeden">Erelid</h2>
     <p>Joost Deconinck</p>
   </section>
   <section class="schachten updateActiviteit updateLeden">
-    <h2>Schachten</h2>
+    <h2 class="titelLeden">Schachten</h2>
     <ul>
       <li>Robrecht Vanhauwere</li>
       <li>Alice Wyseur</li>
@@ -37,7 +41,7 @@
     </ul>
   </section>
   <section class="pro updateActiviteit updateLeden">
-            <h2>Pro-senioren</h2>
+            <h2 class="titelLeden">Pro-senioren</h2>
             <ul>
             <li><b>2016-2017</b> Lore Vanoverbeke</li>
             <li><b>2015-2016</b> Nele Vanoverbeke</li>
@@ -86,7 +90,7 @@
             <em>(*) Deze persoon wenst zijn naam niet openbaar te maken via de website</em>
         </section>
   <section class="leden updateActiviteit updateLeden">
-            <h2>Commilitonen</h2>
+            <h2 class="titelLeden">Commilitonen</h2>
             <ul>
               <li>Sander Cognie</li>
               <li> Isa Lemaitre </li>

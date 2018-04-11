@@ -19,6 +19,10 @@ $routes = array(
     'controller' => 'Home',
     'action' => 'leden'
   ),
+  'clubinfo' => array(
+    'controller' => 'Home',
+    'action' => 'clubinfo'
+  ),
   'sponsor' => array(
     'controller' => 'Sponsor',
     'action' => 'sponsor'

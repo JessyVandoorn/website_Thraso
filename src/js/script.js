@@ -64,7 +64,7 @@
     $naam.textContent = `${lid.naam}`;
     $img.setAttribute(`src`, `${lid.img}`);
     $img.setAttribute(`width`, `100`);
-    // $img.setAttribute(`height`, `100`);
+    $img.setAttribute(`height`, `100`);
     $img.classList.add(`imagePreasidium`);
 
     $div.appendChild($titel);
