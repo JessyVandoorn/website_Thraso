@@ -141,8 +141,8 @@
     ?>
       <form action="" method="post" class="form">
         <input type="hidden" name="robot" value="test_spambot">
-        <input type="email" class="inputMail" placeholder="info@thraso.com" name="email">
-        <input type="text" class="inputMail" placeholder="typ hier je tekst" name="tekst">
+        <input type="email" class="inputMail whiteText" placeholder="info@thraso.com" name="email">
+        <input type="text" class="inputMail whiteText" placeholder="typ hier je tekst" name="tekst">
         <input type="submit" name="verstuur" value="verstuur" class="button whiteText">
       </form>
       <p class="tekst whiteText">senior Milan Vandermeulen: +32 471 137 217</p>
