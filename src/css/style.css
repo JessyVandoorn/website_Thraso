@@ -39,7 +39,7 @@ body {
   font-size: 1.8rem;
 }
 
-.container {
+.containerEigen {
   width: 126rem;
   margin: auto;
 }
@@ -113,6 +113,7 @@ h3 {
 
 .marginNumbers {
   margin-bottom: 2.4rem;
+  margin-right: 1rem;
 }
 
 .itemNav:hover {
@@ -524,9 +525,9 @@ h3 {
 
 @media (min-width: 768px) {
 
-  /* .container {
-    padding: unset;
-  } */
+  .containerEigen {
+    width: 95vw;
+  }
 
   .inputMail {
     margin-bottom: 2rem;
@@ -586,8 +587,8 @@ h3 {
   }
 
   .displayImage {
-    width: 80vw;
-    height: 40vw;
+    width: 87vw;
+    height: 45vw;
   }
 
   .hiddenImages {
@@ -606,24 +607,82 @@ h3 {
   }
 
   .gridActiviteiten {
-    grid-template: 'title . .' 'act1 act3 act2' min-content / 24rem 24rem 24rem;
+    grid-template: 'title . .' 'act1 act3 act2' min-content / 23rem 23rem 23rem;
   }
 
   .imageActiviteit {
-    width: 24rem;
-    height: 12rem;
+    width: 23rem;
+    height: 11.5rem;
   }
 
   .orangeTitle {
-    width: 24rem;
+    width: 23rem;
   }
 
   .redBackground {
-    width: 24rem;
+    width: 23rem;
   }
 
   .gridWat {
-      grid-template: 'title .' 'game cantus' 'sport weekend' max-content / 50vw 50vw;
+    grid-template: 'title . . .' 'game cantus sport weekend';
+  }
+
+  .game {
+    width: 16.5rem;
+    background-size: 16.5rem 18rem;
+  }
+
+  .cantus {
+    width: 18.5rem;
+    background-size: 18rem 20rem;
+  }
+
+  .sport {
+    width: 16.5rem;
+    background-size: 16.5rem 18rem;
+  }
+
+  .weekend {
+    width: 16.5rem;
+    background-size: 16.5rem 18rem;
+  }
+
+  .updateWeekendSportGame {
+    width: 16.5rem;
+    height: 46rem;
+  }
+
+  .updateCantus {
+    width: 18rem;
+    height: 46rem;
+  }
+
+  .updateAct123 {
+    width: 23rem;
+  }
+
+  .images {
+    top: 3rem;
+  }
+
+  .GameNights {
+    bottom: -12rem;
+  }
+
+  .updateTitle {
+    bottom: -10rem;
+  }
+
+  .tekstGame {
+    bottom: -11rem;
+  }
+
+  .tekstWat {
+    bottom: -10rem;
+  }
+
+  .updateHead2 {
+    width: 32rem;
   }
 
 }

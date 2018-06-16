@@ -39,7 +39,7 @@
     </div>
   </header>
   <main>
-    <div class="container">
+    <div class="containerEigen">
       <?php if(!empty($_SESSION['info'])): ?><div class="alert alert-success"><?php echo $_SESSION['info'];?></div><?php endif; ?>
       <?php if(!empty($_SESSION['error'])): ?><div class="alert alert-danger"><?php echo $_SESSION['error'];?></div><?php endif; ?>
 
