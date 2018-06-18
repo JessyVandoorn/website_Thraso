@@ -523,7 +523,7 @@ h3 {
   margin-top: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px){
 
   .containerEigen {
     width: 95vw;
@@ -683,6 +683,93 @@ h3 {
 
   .updateHead2 {
     width: 32rem;
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+
+  .containerEigen {
+    width: 96rem;
+  }
+
+  .displayImage {
+    width: 80rem;
+    height: 39rem;
+  }
+
+  .headerImages {
+    height: 45rem
+  }
+
+  .divHeader{
+    height: unset;
+  }
+
+  .gridActiviteiten {
+    grid-template: 'title . .' 'act1 act2 act3' min-content/31rem 31rem 31rem;
+    /* margin-left: 1.5rem; */
+  }
+
+  .updateAct123 {
+    width: 31rem;
+  }
+
+  .imageActiviteit {
+    width: 31rem;
+    height: 15.5rem;
+  }
+
+  .orangeTitle {
+    width: 31rem;
+  }
+
+  .redBackground {
+    width: 31rem;
+  }
+
+  .gridWat {
+    grid-template: 'title . . .' 'game cantus sport weekend' min-content/23rem 23rem 23rem 23rem;
+    /* margin-left: 2rem; */
+    height: 58rem;
+  }
+
+  .updateActiviteit {
+    width: 23rem;
+    height: 50rem;
+  }
+
+  .form {
+    flex-direction: column;
+    height: 17rem;
+  }
+
+  .updateAside {
+    height: 57rem;
+  }
+
+  .button {
+    height: 4rem;
+  }
+
+  .updateLeden {
+    height: auto;
+  }
+
+  .preasidium {
+    width: auto;
+  }
+
+  .wie {
+    flex-wrap: wrap;
+  }
+
+  .leden {
+    justify-self: flex-end;
+  }
+
+  .pro {
+    width: 27rem;
   }
 
 }
