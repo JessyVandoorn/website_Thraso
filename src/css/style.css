@@ -523,6 +523,42 @@ h3 {
   margin-top: 2rem;
 }
 
+@media (max-width: 767px) {
+  .containerEigen {
+    width: 100vw;
+  }
+
+  .displayImage {
+    width: 85vw;
+    height: 57vw;
+  }
+
+  .imageActiviteit {
+    width: 30vw;
+    height: 15vw;
+  }
+
+  .orangeTitle {
+    width: 30vw;
+  }
+
+  .redBackground {
+    width: 30vw;
+  }
+
+  .updateAct123 {
+    width: 30vw;
+  }
+
+  .gridWat {
+    grid-template: 'title . ' 'game cantus' 'sport weekend' max-content;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1023px){
 
   .containerEigen {
