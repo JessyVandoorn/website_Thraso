@@ -525,7 +525,7 @@ h3 {
 
 @media (max-width: 767px) {
   .containerEigen {
-    width: 100vw;
+    width: 93vw;
   }
 
   .displayImage {
@@ -556,6 +556,10 @@ h3 {
 
   .form {
     flex-direction: column;
+  }
+
+  .flexCenter {
+    justify-self: center;
   }
 }
 

@@ -30,19 +30,15 @@
     <h2 class="titelLeden">Schachten</h2>
     <ul>
       <li>Robrecht Vanhauwere</li>
-      <li>Alice Wyseur</li>
       <li>Joachim Bauters</li>
-      <li>Hanne van Biervliet</li>
       <li>Febe Neyrinck</li>
-      <li>Jannes De Rycke</li>
-      <li>Lore Schepens</li>
-      <li>Renzo Lambrecht</li>
       <li>Michael Delbeke</li>
     </ul>
   </section>
   <section class="pro updateActiviteit updateLeden">
             <h2 class="titelLeden">Pro-senioren</h2>
             <ul>
+              <li><b>2017-2018</b> Milan Vandermeulen</li>
             <li><b>2016-2017</b> Lore Vanoverbeke</li>
             <li><b>2015-2016</b> Nele Vanoverbeke</li>
     <li><b>2014-2015</b> Lore Vanoverbeke</li>
@@ -92,6 +88,11 @@
   <section class="leden updateActiviteit updateLeden">
             <h2 class="titelLeden">Commilitonen</h2>
             <ul>
+            <li>Jannes De Rycke</li>
+      <li>Lore Schepens</li>
+      <li>Renzo Lambrecht</li>
+            <li>Hanne van Biervliet</li>
+            <li>Alice Wyseur</li>
               <li>Sander Cognie</li>
               <li> Isa Lemaitre </li>
               <li> Emiel Toye</li>

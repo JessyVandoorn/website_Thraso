@@ -1,8 +1,8 @@
 [
      {
          "titel": "Preases",
-        "naam": "Milan Vandermeulen",
-        "img": "../assets/img/JPEG/milan.jpg"
+        "naam": "Thijs Vandorpe",
+        "img": "../assets/img/JPEG/thijs.jpg"
     },
     {
         "titel": "Vice Preases",
@@ -11,7 +11,7 @@
         },
     {
         "titel": "Cantor",
-       "naam": "Nele Vanoverbeke",
+       "naam": "Lore Vanoverbeke",
        "img": "../assets/img/JPEG/nele.jpg"
    },
     {
@@ -36,13 +36,8 @@
 }, 
 {
     "titel": "Schachtentemmer",
-    "naam": "Diederik Vermeersch",
+    "naam": "Renzo Lambrecht",
     "img": "../assets/img/JPEG/jannes3.jpg"
-}, 
-{
-    "titel": "Feest",
-    "naam": "Thijs Vandorpe",
-    "img": "../assets/img/JPEG/thijs.jpg"
 }
    
 ]
