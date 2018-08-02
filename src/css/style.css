@@ -27,6 +27,10 @@ body {
   text-decoration: none;
 }
 
+.textAlign {
+  text-align: center;
+}
+
 .wf-active .imageDisplayNumber {
   font-family: 'Open Sans';
   font-weight: 400;
@@ -382,10 +386,11 @@ h3 {
 .gridLeden {
   display: grid;
   grid-template:
-    'preasidium . . ' 42rem
     'pro . leden '
     '. erelid . ' min-content
     '. schachten . ';
+    padding-left: 0rem;
+    padding-right: 0rem;
 }
 
 .preasidium {
@@ -523,6 +528,55 @@ h3 {
   margin-top: 2rem;
 }
 
+.gridSponsor {
+  display: grid;
+  /* grid-template: 'hoofdsponsor . . .' 
+  'logo1 logo2 logo3 logo4' 
+  'logo5 logo6 logo7 logo8' 
+  'logo9 logo10 logo 11 logo12' min-content; */
+  grid-template: 'hoofdsponsor . . ' 'logo1 logo2 logo3' 'logo4 logo5 logo6' ;
+  grid-gap: 2rem;
+}
+
+.andereSponsors {
+  width: 25rem;
+  height: 20rem;
+}
+
+.logo1 {
+  grid-area: logo1;
+}
+
+.logo2 {
+  grid-area: logo2;
+}
+
+.logo3 {
+  grid-area: logo3;
+}
+
+.logo4 {
+  grid-area: logo4;
+}
+
+.logo5 {
+  grid-area: logo5;
+}
+
+.logo6 {
+  grid-area: logo6;
+}
+
+.hoofdsponsor {
+  grid-area: hoofdsponsor;
+  /* grid-column: 2; */
+}
+
+.imageSponsor {
+  width: 25rem;
+  height: 20rem;
+}
+
 @media (max-width: 767px) {
   .containerEigen {
     width: 93vw;
@@ -560,6 +614,10 @@ h3 {
 
   .flexCenter {
     justify-self: center;
+  }
+
+  .gridSponsor {
+    grid-template: 'hoofdsponsor .' 'logo1 logo2' 'logo3 logo4' 'logo5 logo6';
   }
 }
 
@@ -621,9 +679,11 @@ h3 {
   }
 
   .gridLeden {
-    grid-template: 'preasidium . . ' 'pro leden erelid ' '. . schachten';
+    grid-template:  'pro erelid leden ' '. schachten .';
     grid-gap: 1.5rem;
     margin: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 
   .displayImage {
@@ -725,6 +785,9 @@ h3 {
     width: 32rem;
   }
 
+  .gridSponsor {
+    grid-template: 'hoofdsponsor .' 'logo1 logo2' 'logo3 logo4' 'logo5 logo6';
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px){

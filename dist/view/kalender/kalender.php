@@ -1,5 +1,4 @@
             <div class="page-header">
-                <div class="new-push"></div>
                 <div class="pull-right form-inline">
                     <div class="btn-group">
                         <button class="btn btn-default" data-calendar-nav="prev">&lt;&lt; Vorige</button>
@@ -11,7 +10,7 @@
                 <h3>Kalender</h3>
                 
             </div>
-            <p><span class="event-info marginKleur">Activiteit</span>, <span class="event-warning marginKleur">Cantus</span>.</p>
+            <p><span class="event-info marginKleur">Activiteit</span> <span class="event-warning marginKleur">Cantus</span></p>
             <div class="row">
                 <div class="col-lg-12">
                     <div id="calendar"></div>

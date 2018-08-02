@@ -1,48 +1,43 @@
 [
      {
          "titel": "Preases",
-        "naam": "Milan Vandermeulen",
-        "img": "../assets/img/JPEG/milan.jpg"
+        "naam": "Thijs Vandorpe",
+        "img": "../assets/img/thijs.jpg"
     },
     {
         "titel": "Vice Preases",
        "naam": "Wannes Benoit",
-       "img": "../assets/img/JPEG/wannes.jpg"
+       "img": "../assets/img/wannes.jpg"
         },
-    {
-        "titel": "Cantor",
-       "naam": "Nele Vanoverbeke",
-       "img": "../assets/img/JPEG/nele.jpg"
-   },
     {
         "titel": "Quastor",
        "naam": "Lenny Verscheure",
-       "img": "../assets/img/JPEG/lenny.jpg"
+       "img": "../assets/img/lenny.jpg"
    }, 
    {
     "titel": "Scriptor",
-   "naam": "Zana Op't Roodt",
+   "naam": "Zana op 't Roodt",
    "img": "../assets/img/JPEG/zana.jpg"
+},
+{
+    "titel": "Zedenmeester",
+   "naam": "Jannes De Rycke",
+   "img": "../assets/img/jannesD.jpg"
 },
 {
     "titel": "P.R",
    "naam": "Jessy Vandoorn",
-   "img": "../assets/img/JPEG/jessy2.jpg"
+   "img": "../assets/img/jessy.jpg"
 }, 
 {
     "titel": "Sport",
     "naam": "Jannes Roman",
-    "img": "../assets/img/jannes.jpg"
+    "img": "../assets/img/jannes2.jpg"
 }, 
 {
     "titel": "Schachtentemmer",
-    "naam": "Diederik Vermeersch",
-    "img": "../assets/img/JPEG/jannes3.jpg"
-}, 
-{
-    "titel": "Feest",
-    "naam": "Thijs Vandorpe",
-    "img": "../assets/img/JPEG/thijs.jpg"
+    "naam": "Renzo Lambrecht",
+    "img": "../assets/img/renzo.jpg"
 }
    
 ]

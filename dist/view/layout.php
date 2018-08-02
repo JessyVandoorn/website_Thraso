@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl ">
 <head>
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-25278195-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-25278195-1');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -39,7 +48,7 @@
     </div>
   </header>
   <main>
-    <div class="container">
+    <div class="containerEigen">
       <?php if(!empty($_SESSION['info'])): ?><div class="alert alert-success"><?php echo $_SESSION['info'];?></div><?php endif; ?>
       <?php if(!empty($_SESSION['error'])): ?><div class="alert alert-danger"><?php echo $_SESSION['error'];?></div><?php endif; ?>
 
@@ -78,7 +87,7 @@
     {  
      
     // definieren variabelen
-    $ontvanger = 'jessy.vandoorn@outlook.com'; // HIEW JOUW EMAIL INVULLEN
+    $ontvanger = 'info@thraso.com'; // HIEW JOUW EMAIL INVULLEN
     $onderwerp_email = "Contactformulier"; // onderwerp wat in de email te zien is; tussen de "" evt zelf veranderen zoals je wilt
     $naam = $_POST['email'];
     $bericht = $_POST['tekst']; 
@@ -141,12 +150,12 @@
     ?>
       <form action="" method="post" class="form">
         <input type="hidden" name="robot" value="test_spambot">
-        <input type="email" class="inputMail" placeholder="info@thraso.com" name="email">
-        <input type="text" class="inputMail" placeholder="typ hier je tekst" name="tekst">
+        <input type="email" class="inputMail whiteText" placeholder="info@thraso.com" name="email">
+        <input type="text" class="inputMail whiteText" placeholder="typ hier je tekst" name="tekst">
         <input type="submit" name="verstuur" value="verstuur" class="button whiteText">
       </form>
-      <p class="tekst whiteText">senior Milan Vandermeulen: +32 471 137 217</p>
-      <p class="tekst whiteText">Schachtentemmer: +32 471 021 886</p>
+      <p class="tekst whiteText">senior Thijs Vandorpe: +32 479 61 64 05‬</p>
+      <p class="tekst whiteText">Schachtentemmer: +32 499 25 76 88‬</p>
     </div>
   </aside>
   <footer class="lighterBlue updateFooter">

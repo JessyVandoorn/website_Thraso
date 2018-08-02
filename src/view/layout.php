@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl ">
 <head>
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-25278195-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-25278195-1');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -145,8 +154,8 @@
         <input type="text" class="inputMail whiteText" placeholder="typ hier je tekst" name="tekst">
         <input type="submit" name="verstuur" value="verstuur" class="button whiteText">
       </form>
-      <p class="tekst whiteText">senior Milan Vandermeulen: +32 471 137 217</p>
-      <p class="tekst whiteText">Schachtentemmer: +32 471 021 886</p>
+      <p class="tekst whiteText">senior Thijs Vandorpe: +32 479 61 64 05‬</p>
+      <p class="tekst whiteText">Schachtentemmer: +32 499 25 76 88‬</p>
     </div>
   </aside>
   <footer class="lighterBlue updateFooter">
@@ -161,13 +170,13 @@
   <script type="text/javascript" src="js/language/nl-NL.js"></script>
   <script type="text/javascript" src="js/calendar.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
     		var disqus_shortname = 'hscthraso'; // required: replace example with your forum shortname
     		(function() {
     			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     		})();
-    	</script> -->
+    	</script>
   <?php echo $js;?>
   </html>

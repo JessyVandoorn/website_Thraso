@@ -5,19 +5,7 @@
 </div>
 <section class="preasidium updateActiviteit updateLeden container">
     <h2 class="titelLeden">Praesidium</h2>
-    <!-- <ul>
-      <li><b>Praeses</b>: Milan Vandermeulen</li>
-      <li><b>Vice-Praeses</b>: Wannes Benoit</li>
-      <li><b>Quaestor</b>: Lenny Verscheure</li>
-      <li><b>Cantor</b>: Nele Vanoverbeke</li>
-      <li><b>Scriptor</b>: Zana op 't Roodt</li>
-      <li><b>PR</b>: Jessy Vandoorn</li>
-      <li><b>Cultuur</b>: Jannes Roman</li>
-      <li><b>Feest</b>: Thijs Vandorpe</li>
-      <li><b>Schachtentemmer</b>: Diederik Vermeersch</li>
-    </ul> -->
     <div class="wie">
-
     </div>
   </section>
 <article class="gridLeden container">
@@ -30,19 +18,15 @@
     <h2 class="titelLeden">Schachten</h2>
     <ul>
       <li>Robrecht Vanhauwere</li>
-      <li>Alice Wyseur</li>
       <li>Joachim Bauters</li>
-      <li>Hanne van Biervliet</li>
       <li>Febe Neyrinck</li>
-      <li>Jannes De Rycke</li>
-      <li>Lore Schepens</li>
-      <li>Renzo Lambrecht</li>
       <li>Michael Delbeke</li>
     </ul>
   </section>
   <section class="pro updateActiviteit updateLeden">
             <h2 class="titelLeden">Pro-senioren</h2>
             <ul>
+              <li><b>2017-2018</b> Milan Vandermeulen</li>
             <li><b>2016-2017</b> Lore Vanoverbeke</li>
             <li><b>2015-2016</b> Nele Vanoverbeke</li>
     <li><b>2014-2015</b> Lore Vanoverbeke</li>
@@ -52,7 +36,7 @@
                 <li><b>2010-2011</b> Pieter-jan Impe</li>
                 <li><b>2009-2010</b> Krulle (*)</li>
                 <li><b>2008-2009</b> Bram D'Haenens</li>
-                <li><b>2007-2008</b> Franky Cornelis</li>
+                <li><b>2007-2008</b> *</li>
                 <li><b>2006-2007</b> Ruben De Praetere</li>
                 <li><b>2005-2006</b> Jeroen Vercruysse</li>
                 <li><b>2004-2005</b> Björn Adins</li>
@@ -92,6 +76,10 @@
   <section class="leden updateActiviteit updateLeden">
             <h2 class="titelLeden">Commilitonen</h2>
             <ul>
+            <li>Laetitia Dendauw</li>
+      <li>Lore Schepens</li>
+            <li>Hanne van Biervliet</li>
+            <li>Alice Wyseur</li>
               <li>Sander Cognie</li>
               <li> Isa Lemaitre </li>
               <li> Emiel Toye</li>
