@@ -34,6 +34,7 @@ function iCalDecoder($file)
         case 'Thraso':
           $SDorganisator = "Thraso";
           break;
+      }
     } 
 
     $SDid = $i;
@@ -97,5 +98,5 @@ function getInbetween($string, $begin, $end){
   return end(explode($begin, reset(explode($end, $string))));
 }
 
-echo iCalDecoder('https://calendar.google.com/calendar/ical/jouw-link-naar-de-ical-van-de-club.ics');
+echo iCalDecoder('https://calendar.google.com/calendar/ical/mm48m2stj1c0jlcj0j3q4o0ud8%40group.calendar.google.com/public/basic.ics');
 ?>

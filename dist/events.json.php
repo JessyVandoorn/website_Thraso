@@ -4,7 +4,6 @@ date_default_timezone_set('UTC');
 function iCalDecoder($file)
 {
   $ical = file_get_contents($file);
-  // var_dump($file);
 
   preg_match_all('/(BEGIN:VEVENT.*?END:VEVENT)/si', $ical, $result, PREG_PATTERN_ORDER);
   for ($i = 0; $i < count($result[0]); $i++) {
@@ -29,7 +28,14 @@ function iCalDecoder($file)
     $calSummary = getInbetween($calLine, "SUMMARY:", "\r\nTRANSP");
     $summaryArray = explode(" | ", $calSummary);
 
-    $SDorganisator = "thraso";
+    $SDorganisator = "Ongekend";
+    if (count($summaryArray) > 1) {
+      switch(reset($summaryArray)){
+        case 'Thraso':
+          $SDorganisator = "Thraso";
+          break;
+      }
+    } 
 
     $SDid = $i;
     $SDtitle = end($summaryArray);
@@ -43,12 +49,16 @@ function iCalDecoder($file)
         $type = preg_replace('/\s*/', '', reset(explode("\\n", end(explode("ype: ", $regs[1])))));
 
         switch($type){
-          case "cantus":
-            $SDclass = "event-warning";
+          case "training":
+            $SDclass = "event-info";
             break;
 
-          case "activiteit":
-            $SDclass = "event-info";
+          case "duik":
+            $SDclass = "event-important";
+            break;
+
+          case "info":
+            $SDclass = "event-inverse";
             break;
         }
       }
@@ -88,5 +98,5 @@ function getInbetween($string, $begin, $end){
   return end(explode($begin, reset(explode($end, $string))));
 }
 
-echo iCalDecoder('https://calendar.google.com/calendar/ical/jouw-link-naar-de-ical-van-de-club.ics');
+echo iCalDecoder('https://calendar.google.com/calendar/ical/mm48m2stj1c0jlcj0j3q4o0ud8%40group.calendar.google.com/public/basic.ics');
 ?>
