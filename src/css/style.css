@@ -192,13 +192,19 @@ h3 {
   padding: 1rem;
 }
 
-.gridWat {
+/* .gridWat {
   display: grid;
   grid-template:
     'title . . .'
     'game cantus sport weekend' max-content;
   grid-gap: 2rem;
-}
+} */
+
+.gridWat {
+  display:grid;
+    grid-template: 'title' 'game' 'cantus' 'sport''weekend';
+    grid-gap: 2rem;
+  }
 
 .updateWat {
   z-index: 1;
@@ -577,7 +583,21 @@ h3 {
   height: 20rem;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 400px) {
+
+  .h1 {
+    display: none;
+  }
+
+  .gridActiviteiten {
+    grid-template: 'title' 'act1' 'act2' 'act3';
+    align-items: center;
+  }
+
+  
+}
+
+@media  (min-width: 640px) {
   .containerEigen {
     width: 93vw;
   }
@@ -588,20 +608,20 @@ h3 {
   }
 
   .imageActiviteit {
-    width: 30vw;
-    height: 15vw;
+    width: 80vw;
+    height: 40vw;
   }
 
   .orangeTitle {
-    width: 30vw;
+    width: 80vw;
   }
 
   .redBackground {
-    width: 30vw;
+    width: 80vw;
   }
 
   .updateAct123 {
-    width: 30vw;
+    width: 80vw;
   }
 
   .gridWat {
