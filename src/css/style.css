@@ -664,6 +664,22 @@ h3 {
     justify-self: center;
     grid-column: span 2;
   }
+
+  .gridInfo {
+    grid-template: 'schild' 'clublied' 'kleuren' 'historiek';
+  }
+
+  .historiek {
+    grid-row: unset;
+  }
+
+  .schild {
+    grid-row: unset;
+  }
+
+  .clublied {
+    grid-row: unset;
+  }
   
 }
 
