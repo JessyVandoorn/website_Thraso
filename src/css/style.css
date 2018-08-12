@@ -575,7 +575,9 @@ h3 {
 
 .hoofdsponsor {
   grid-area: hoofdsponsor;
-  /* grid-column: 2; */
+  grid-column: span 2;
+    align-self: center;
+    justify-self: center;
 }
 
 .imageSponsor {
@@ -594,10 +596,6 @@ h3 {
     align-items: center;
   }
 
-  
-}
-
-@media  (min-width: 640px) {
   .containerEigen {
     width: 93vw;
   }
@@ -622,10 +620,7 @@ h3 {
 
   .updateAct123 {
     width: 80vw;
-  }
-
-  .gridWat {
-    grid-template: 'title . ' 'game cantus' 'sport weekend' max-content;
+    justify-self: center;
   }
 
   .form {
@@ -636,9 +631,64 @@ h3 {
     justify-self: center;
   }
 
-  .gridSponsor {
-    grid-template: 'hoofdsponsor .' 'logo1 logo2' 'logo3 logo4' 'logo5 logo6';
+  .headerImages {
+    height: auto;
   }
+
+  .marginNumbers {
+    display: none;
+  }
+
+  .divHeader {
+    height: auto;
+  }
+
+  .krul {
+    display: none;
+  }
+
+  .button {
+    height: 4rem;
+    margin-top: 1rem;
+  }
+
+  .updateAside {
+    height: auto;
+  }
+
+  .gridSponsor {
+    grid-template: 'hoofdsponsor' 'logo1' 'logo2' 'logo3' 'logo4' 'logo5' 'logo6';
+  }
+
+  .andereSponsors {
+    justify-self: center;
+    grid-column: span 2;
+  }
+  
+}
+
+@media  (min-width: 640px) {
+
+  .gridWat {
+    grid-template: 'title . ' 'game cantus' 'sport weekend' max-content;
+  }
+
+  .krul {
+    display: flex;
+  }
+
+  .h1 {
+    display: flex;
+  }
+
+  .marginNumbers {
+    display: flex;
+}
+
+  .gridSponsor {
+    grid-template: 'hoofdsponsor .' 'logo1 logo2' 'logo3 logo4' 'logo5 logo6'
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px){

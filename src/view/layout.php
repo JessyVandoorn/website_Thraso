@@ -56,7 +56,7 @@
     </div>
   </main>
   <aside class="darkBlue updateAside aside">
-    <img src="assets/img/krul.png" alt="Thraso krul" width="193" height="254">
+    <img src="assets/img/krul.png" alt="Thraso krul" width="193" height="254" class="krul">
     <div class="flexFooter">
       <h2 class="h2 whiteText">contact us</h2>
       <div class="social">
