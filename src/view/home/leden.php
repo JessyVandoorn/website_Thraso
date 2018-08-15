@@ -12,11 +12,11 @@
   
   <section class="erelid updateActiviteit updateLeden">
     <h2 class="titelLeden">Erelid</h2>
-    <p>Joost Deconinck</p>
+    <p class="content">Joost Deconinck</p>
   </section>
   <section class="schachten updateActiviteit updateLeden">
     <h2 class="titelLeden">Schachten</h2>
-    <ul>
+    <ul class="content">
       <li>Robrecht Vanhauwere</li>
       <li>Joachim Bauters</li>
       <li>Febe Neyrinck</li>
@@ -25,7 +25,7 @@
   </section>
   <section class="pro updateActiviteit updateLeden">
             <h2 class="titelLeden">Pro-senioren</h2>
-            <ul>
+            <ul class="content active">
               <li><b>2017-2018</b> Milan Vandermeulen</li>
             <li><b>2016-2017</b> Lore Vanoverbeke</li>
             <li><b>2015-2016</b> Nele Vanoverbeke</li>
@@ -75,16 +75,13 @@
         </section>
   <section class="leden updateActiviteit updateLeden">
             <h2 class="titelLeden">Commilitonen</h2>
-            <ul>
+            <ul class="content">
             <li>Laetitia Dendauw</li>
       <li>Lore Schepens</li>
             <li>Hanne van Biervliet</li>
             <li>Alice Wyseur</li>
               <li>Sander Cognie</li>
-              <li> Isa Lemaitre </li>
               <li> Emiel Toye</li>
-              <li>Irina Callens</li>
-                <li>Gilles Coeman</li>
                 <li>Inez Schepens</li>
               <li>Jolien Van Thorre</li>
               <li>Louise Maertens</li>
@@ -95,7 +92,6 @@
                 <li>Sofie Velghe</li>
                 <li>Jetro Debusschere</li>
                 <li>Glenn Lievens</li>
-                <li>Veerle Naert</li>
                 <li>Nele Hoste</li>
                 <li>Leen Velghe</li>
                 <li>Steffi Van Rompaey</li>
@@ -103,18 +99,9 @@
                 <li>Anissa Bauwens</li>
                 <li>Pauline Naessens</li>
                 <li>Celine Minjauw</li>
-                <li>Reno Decaluwe</li>
-                <li>Koen Vanden Buverie</li>
-                <li>Thomas Coorevits</li>
-                <li>Brecht Versteele</li>
-                <li>Jonas Versteele</li>
-                <li>Jarmo Lefebvre</li>
                 <li>Anthony De Coensel</li>
                 <li>Jens Van Gheluwe</li>
                 <li>Sebastiaan Vanparijs</li>
-                <li>Bram Cnudde</li>
-                <li>Jeroen De Praetere</li>
-                <li>Chana Callens</li>
                 <li>Jennifer Roose</li>
             </ul>
   </section>

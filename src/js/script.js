@@ -76,6 +76,18 @@
     $praesidium.appendChild($wie);
   }
 
+  const clickPanel = (e) => {
+    console.log(e);
+    const panel = e.currentTarget;
+    const list = panel.children[1];
+    console.log(list);
+    if(list.classList.contains('active')){
+      list.classList.remove('active');
+    } else {
+      list.classList.add('active');
+    }
+  }
+
   const init = () => {
       numbers = document.querySelectorAll(`.marginNumbers`);
       console.log(numbers);
@@ -85,6 +97,13 @@
       fetch(url)
         .then(r => r.json())
         .then(data => parse(data));
+
+      const panels = document.querySelectorAll('.updateLeden');
+      panels.forEach(panel => {
+        panel.addEventListener(`click`, clickPanel);
+        console.log(panel);
+      })
+
 }
     init();
 

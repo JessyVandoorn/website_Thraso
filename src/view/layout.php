@@ -11,7 +11,7 @@
   gtag('config', 'UA-25278195-1');
 </script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hsc Thraso </title>
   <script>
@@ -37,7 +37,8 @@
     <div class="lighterBlue">
       <h1><a href="index.html" class="h1 whiteText">Hsc Thraso</a></h1>
       <nav>
-        <ul class="navigatie whiteText">
+        <p class="menu">Menu</p>
+        <ul class="navigatie whiteText menuContent">
           <li><a href="index.php" class="itemNav whiteText">home</a></li>
           <li><a href="index.php?page=clubinfo" class="itemNav whiteText">clubinfo</a></li>
           <li><a href="index.php?page=leden" class="itemNav whiteText">leden</a></li>
@@ -170,13 +171,13 @@
     	<script type="text/javascript" src="js/language/nl-NL.js"></script>
     	<script type="text/javascript" src="js/calendar.js"></script>
     	<script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     		var disqus_shortname = 'hscthraso'; // required: replace example with your forum shortname
     		(function() {
     			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     		})();
-    	</script>
+    	</script> -->
   <?php echo $js;?>
   </html>
