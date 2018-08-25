@@ -5,9 +5,10 @@
   let leden = [];
   const $wie = document.querySelector(`.wie`);
   const $praesidium = document.querySelector(`.preasidium`);
+  const menu = document.querySelector('.menu');
 
   const handleMouseOver = e => {
-    if(currentNumber !== e.currentTarget){
+    if (currentNumber !== e.currentTarget) {
       addItemNav(currentNumber);
       removeImageDisplay(currentNumber);
       currentNumber = e.currentTarget;
@@ -20,8 +21,8 @@
 
   const showImage = number => {
     images.forEach(image => {
-      if(number.innerText === image.id){
-        if(image.classList.contains(`hiddenImages`)){
+      if (number.innerText === image.id) {
+        if (image.classList.contains(`hiddenImages`)) {
           image.classList.remove(`hiddenImages`);
           image.classList.add(`displayImage`);
         }
@@ -81,30 +82,55 @@
     const panel = e.currentTarget;
     const list = panel.children[1];
     console.log(list);
-    if(list.classList.contains('active')){
+    if (list.classList.contains('active')) {
       list.classList.remove('active');
     } else {
       list.classList.add('active');
     }
   }
 
+
+  const clickMenu = (e) => {
+    const menuItems = document.querySelector(`.menuContent`);
+
+    if (menuItems.classList.contains('menu')) {
+      menuItems.classList.remove('menu');
+    } else {
+      menuItems.classList.add('menu');
+    }
+  }
+
   const init = () => {
-      numbers = document.querySelectorAll(`.marginNumbers`);
-      console.log(numbers);
-      numbers.forEach(number => number.addEventListener(`mouseover`, handleMouseOver));
+    numbers = document.querySelectorAll(`.marginNumbers`);
+    console.log(numbers);
+    numbers.forEach(number => number.addEventListener(`mouseover`, handleMouseOver));
 
-      const url = "../assets/data/personen.json";
-      fetch(url)
-        .then(r => r.json())
-        .then(data => parse(data));
+    const url = "../assets/data/personen.json";
+    fetch(url)
+      .then(r => r.json())
+      .then(data => parse(data));
 
+    if (document.documentElement.clientWidth < 640) {
       const panels = document.querySelectorAll('.updateLeden');
       panels.forEach(panel => {
         panel.addEventListener(`click`, clickPanel);
         console.log(panel);
       })
+    } else {
 
-}
-    init();
+      const menuItems = document.querySelectorAll(`.content`);
+
+      menuItems.forEach(item => {
+        item.classList.remove(`content`);
+      })
+    }
+
+
+
+
+    menu.addEventListener('touchstart', clickMenu);
+
+  }
+  init();
 
 }

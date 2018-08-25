@@ -35,14 +35,19 @@
 <body>
   <header>
     <div class="lighterBlue">
-      <h1><a href="index.html" class="h1 whiteText">Hsc Thraso</a></h1>
+      <h1><a href="index.php" class="h1 whiteText">Hsc Thraso</a></h1>
       <nav>
-        <ul class="navigatie whiteText">
-          <li><a href="index.php" class="itemNav whiteText">home</a></li>
-          <li><a href="index.php?page=clubinfo" class="itemNav whiteText">clubinfo</a></li>
-          <li><a href="index.php?page=leden" class="itemNav whiteText">leden</a></li>
-          <li><a href="index.php?page=kalender" class="itemNav whiteText">kalender</a></li>
-          <li><a href="index.php?page=sponsor" class="itemNav whiteText">sponsor</a></li>
+        <div class="lines menu">
+              <span class="line top"></span>
+              <p class=" whiteText lines-text">Menu</p>
+              <span class="line bottom"></span>
+        </div>
+        <ul class="navigatie whiteText menuContent menuResp">
+          <li class="paddingResp"><a href="index.php" class="itemNav whiteText">home</a></li>
+          <li class="paddingResp"><a href="index.php?page=clubinfo" class="itemNav whiteText">clubinfo</a></li>
+          <li class="paddingResp"><a href="index.php?page=leden" class="itemNav whiteText">leden</a></li>
+          <li class="paddingResp"><a href="index.php?page=kalender" class="itemNav whiteText">kalender</a></li>
+          <li class="paddingResp"><a href="index.php?page=sponsor" class="itemNav whiteText">sponsor</a></li>
         </ul>
       </nav>
     </div>
