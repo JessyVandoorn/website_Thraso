@@ -54,6 +54,14 @@ body {
   text-decoration: none;
 }
 
+div#cal-week-box {
+  visibility: hidden;
+}
+
+#cal-day-tick {
+  visibility: hidden;
+}
+
 .whiteText {
   color: white;
 }

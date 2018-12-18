@@ -11,7 +11,7 @@
   gtag('config', 'UA-25278195-1');
 </script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hsc Thraso </title>
   <script>
@@ -35,24 +35,19 @@
 <body>
   <header>
     <div class="lighterBlue">
-      <h1><a href="index.php" class="h1 whiteText">Hsc Thraso</a></h1>
+      <h1><a href="index.html" class="h1 whiteText">Hsc Thraso</a></h1>
       <nav>
-        <div class="lines menu">
-              <span class="line top"></span>
-              <p class=" whiteText lines-text">Menu</p>
-              <span class="line bottom"></span>
-        </div>
-        <ul class="navigatie whiteText menuContent menuResp">
-          <li class="paddingResp"><a href="index.php" class="itemNav whiteText">home</a></li>
-          <li class="paddingResp"><a href="index.php?page=clubinfo" class="itemNav whiteText">clubinfo</a></li>
-          <li class="paddingResp"><a href="index.php?page=leden" class="itemNav whiteText">leden</a></li>
-          <li class="paddingResp"><a href="index.php?page=kalender" class="itemNav whiteText">kalender</a></li>
-          <li class="paddingResp"><a href="index.php?page=sponsor" class="itemNav whiteText">sponsor</a></li>
+        <ul class="navigatie whiteText">
+          <li><a href="index.php" class="itemNav whiteText">home</a></li>
+          <li><a href="index.php?page=clubinfo" class="itemNav whiteText">clubinfo</a></li>
+          <li><a href="index.php?page=leden" class="itemNav whiteText">leden</a></li>
+          <li><a href="index.php?page=kalender" class="itemNav whiteText">kalender</a></li>
+          <li><a href="index.php?page=sponsor" class="itemNav whiteText">sponsor</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="containerEigen">
+  <main>
     <div class="containerEigen">
       <?php if(!empty($_SESSION['info'])): ?><div class="alert alert-success"><?php echo $_SESSION['info'];?></div><?php endif; ?>
       <?php if(!empty($_SESSION['error'])): ?><div class="alert alert-danger"><?php echo $_SESSION['error'];?></div><?php endif; ?>
@@ -61,7 +56,7 @@
     </div>
   </main>
   <aside class="darkBlue updateAside aside">
-    <img src="assets/img/krul.png" alt="Thraso krul" width="193" height="254" class="krul">
+    <img src="assets/img/krul.png" alt="Thraso krul" width="193" height="254">
     <div class="flexFooter">
       <h2 class="h2 whiteText">contact us</h2>
       <div class="social">
@@ -76,7 +71,7 @@
       //filter_var() sanitizes the e-mail
       //address using FILTER_SANITIZE_EMAIL
       $field=filter_var($field, FILTER_SANITIZE_EMAIL);
-     
+
       //filter_var() validates the e-mail
       //address using FILTER_VALIDATE_EMAIL
       if(filter_var($field, FILTER_VALIDATE_EMAIL))
@@ -88,22 +83,22 @@
         return FALSE;
         }
       }
-    if($_SERVER['REQUEST_METHOD'] == 'POST') 
-    {  
-     
+    if($_SERVER['REQUEST_METHOD'] == 'POST')
+    {
+
     // definieren variabelen
     $ontvanger = 'info@thraso.com'; // HIEW JOUW EMAIL INVULLEN
     $onderwerp_email = "Contactformulier"; // onderwerp wat in de email te zien is; tussen de "" evt zelf veranderen zoals je wilt
     $naam = $_POST['email'];
-    $bericht = $_POST['tekst']; 
-     
-     
+    $bericht = $_POST['tekst'];
+
+
     // headers opmaken
     $headers  = 'MIME-Version: 1.0';
     $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
     $headers .= 'From: '.$naam;
-     
-     
+
+
     // body voor de email opmaken
     $body = "";
     $body .= "Naam: ";
@@ -113,42 +108,31 @@
     $body .= "Bericht: ";
     $body .= $bericht;
     $body .= "\n";
-    // verwerking input checkbox
-    // if(isset($_POST['newsletter']) &&
-    //    $_POST['newsletter'] == 'yes')
-    // {
-    //    $body .= "Nieuwsbrief: Ja";
-    //    $body .= "\n";
-    // }
-    // else
-    // {
-    //     $body .= "Nieuwsbrief: Nee";
-    //     $body .= "\n";
-    // }
+
     // mailcheck, wordt later gechecked
     $mailcheck = spamcheck($_POST['email']);
-     
-    // checken of een robot ons formulier bezoekt  
+
+    // checken of een robot ons formulier bezoekt
     if($_POST['robot'] != 'test_spambot') {
-        die();				    
-    } 
+        die();
+    }
     //check of email geldig is en geldige input is geleverd
-     
+
     elseif ($mailcheck==FALSE) {
         echo 'Ongeldige input emailveld<br /><br />';
     }
-     
+
     else {
-     
-    // email verzenden 
+
+    // email verzenden
     $formsent = mail($ontvanger, $onderwerp_email, $body, $headers);
-     
+
     // echo's als email is verzonden
     if ($formsent){
-      echo 'Uw bericht is successvol verstuurd!<br /><br />'; 
+      echo 'Uw bericht is successvol verstuurd!<br /><br />';
     }
     else{
-      echo 'Sorry, maar er is iets misgegaan met het versturen, probeer het later nog eens.'; 
+      echo 'Sorry, maar er is iets misgegaan met het versturen, probeer het later nog eens.';
         }
       }
     }
@@ -160,7 +144,7 @@
         <input type="submit" name="verstuur" value="verstuur" class="button whiteText">
       </form>
       <p class="tekst whiteText">senior Thijs Vandorpe: +32 479 61 64 05‬</p>
-      <p class="tekst whiteText">Schachtentemmer: +32 499 25 76 88‬</p>
+      <p class="tekst whiteText">Schachtentemmer: +32 479 66 79 52</p>
     </div>
   </aside>
   <footer class="lighterBlue updateFooter">
@@ -169,19 +153,11 @@
   </body>
 
   <script type="text/javascript" src="components/jquery/jquery.min.js"></script>
-    	<script type="text/javascript" src="components/underscore/underscore-min.js"></script>
-    	<script type="text/javascript" src="components/bootstrap2/js/bootstrap.min.js"></script>
-    	<script type="text/javascript" src="components/jstimezonedetect/jstz.min.js"></script>
-    	<script type="text/javascript" src="js/language/nl-NL.js"></script>
-    	<script type="text/javascript" src="js/calendar.js"></script>
-    	<script type="text/javascript" src="js/app.js"></script>
-  <!-- <script type="text/javascript">
-    		var disqus_shortname = 'hscthraso'; // required: replace example with your forum shortname
-    		(function() {
-    			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    		})();
-    	</script> -->
+  <script type="text/javascript" src="components/underscore/underscore-min.js"></script>
+  <script type="text/javascript" src="components/bootstrap2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="components/jstimezonedetect/jstz.min.js"></script>
+  <script type="text/javascript" src="js/language/nl-NL.js"></script>
+  <script type="text/javascript" src="js/calendar.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
   <?php echo $js;?>
   </html>

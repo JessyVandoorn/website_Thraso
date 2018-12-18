@@ -49,16 +49,12 @@ function iCalDecoder($file)
         $type = preg_replace('/\s*/', '', reset(explode("\\n", end(explode("ype: ", $regs[1])))));
 
         switch($type){
-          case "training":
+          case "activiteit":
             $SDclass = "event-info";
             break;
 
-          case "duik":
+          case "cantus":
             $SDclass = "event-important";
-            break;
-
-          case "info":
-            $SDclass = "event-inverse";
             break;
         }
       }

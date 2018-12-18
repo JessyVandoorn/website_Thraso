@@ -13,7 +13,7 @@
         "titel": "Quastor",
        "naam": "Lenny Verscheure",
        "img": "../assets/img/lenny.jpg"
-   }, 
+   },
    {
     "titel": "Scriptor",
    "naam": "Zana op 't Roodt",
@@ -28,16 +28,16 @@
     "titel": "P.R",
    "naam": "Jessy Vandoorn",
    "img": "../assets/img/jessy.jpg"
-}, 
+},
 {
-    "titel": "Sport",
+    "titel": "Sport & Cultuur",
     "naam": "Jannes Roman",
     "img": "../assets/img/jannes2.jpg"
-}, 
+},
 {
     "titel": "Schachtentemmer",
-    "naam": "Renzo Lambrecht",
-    "img": "../assets/img/renzo.jpg"
+    "naam": "Alice Wyseur",
+    "img": "../assets/img/alice.jpg"
 }
-   
+
 ]
