@@ -21,7 +21,7 @@
         <li>Fleur Verroonen</li>
         <li>Maarten Van de Velde</li>
         <li>Machiel Vandewalle</li>
-        <li>Sarah Schepens</li>
+        <li>Sara Schepens</li>
         <li>Jelle Verplancke</li>
         <li>Ruben Debouver</li>
         <li>Jasper Decoene</li>
@@ -84,9 +84,8 @@
         <li>Laetitia Dendauw</li>
         <li>Lore Schepens</li>
         <li>Hanne van Biervliet</li>
-        <li>Alice Wyseur</li>
         <li>Sander Cognie</li>
-        <li> Emiel Toye</li>
+        <li>Emiel Toye</li>
         <li>Inez Schepens</li>
         <li>Jolien Van Thorre</li>
         <li>Louise Maertens</li>

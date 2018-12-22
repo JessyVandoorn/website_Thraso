@@ -7,6 +7,7 @@
   const $praesidium = document.querySelector(`.preasidium`);
   const menu = document.querySelector('.menu');
 
+
   const handleMouseOver = e => {
     if (currentNumber !== e.currentTarget) {
       addItemNav(currentNumber);
@@ -95,8 +96,10 @@
 
     if (menuItems.classList.contains('menu')) {
       menuItems.classList.remove('menu');
+      menuItems.classList.remove('menuResp');
     } else {
       menuItems.classList.add('menu');
+      menuItems.classList.add('menuResp');
     }
   }
 
@@ -106,9 +109,13 @@
     numbers.forEach(number => number.addEventListener(`mouseover`, handleMouseOver));
 
     const url = "../assets/data/personen.json";
-    fetch(url)
+    console.log(location.href);
+    if ( location.href.indexOf("index.php?page=leden") > -1 ) {
+      fetch(url)
       .then(r => r.json())
       .then(data => parse(data));
+    }
+    
 
     if (document.documentElement.clientWidth < 640) {
       const panels = document.querySelectorAll('.updateLeden');
@@ -124,13 +131,9 @@
         item.classList.remove(`content`);
       })
     }
-
-
-
-
     menu.addEventListener('touchstart', clickMenu);
-
   }
+
   init();
 
 }

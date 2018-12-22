@@ -54,14 +54,6 @@ body {
   text-decoration: none;
 }
 
-div#cal-week-box {
-  visibility: hidden;
-}
-
-#cal-day-tick {
-  visibility: hidden;
-}
-
 .whiteText {
   color: white;
 }
@@ -637,6 +629,7 @@ h3 {
     width: 100vw;
     height: 14rem;
     right: -1px;
+    top: 66px;
   }
 
   main {

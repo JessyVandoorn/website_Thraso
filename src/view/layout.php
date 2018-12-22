@@ -35,16 +35,17 @@
   <?php echo $css;?>
 </head>
 <body>
-  <header>
+<header>
     <div class="lighterBlue">
       <h1><a href="index.html" class="h1 whiteText">Hsc Thraso</a></h1>
       <nav>
-        <ul class="navigatie whiteText">
-          <li><a href="index.php" class="itemNav whiteText">home</a></li>
-          <li><a href="index.php?page=clubinfo" class="itemNav whiteText">clubinfo</a></li>
-          <li><a href="index.php?page=leden" class="itemNav whiteText">leden</a></li>
-          <li><a href="index.php?page=kalender" class="itemNav whiteText">kalender</a></li>
-          <li><a href="index.php?page=sponsor" class="itemNav whiteText">sponsor</a></li>
+        <p class="menu whiteText">Menu</p>
+        <ul class="navigatie whiteText menuContent">
+          <li class="paddingResp"><a href="index.php" class="itemNav whiteText paddingResp">home</a></li>
+          <li class="paddingResp"><a href="index.php?page=clubinfo" class="itemNav whiteText paddingResp">clubinfo</a></li>
+          <li class="paddingResp"><a href="index.php?page=leden" class="itemNav whiteText paddingResp">leden</a></li>
+          <li class="paddingResp"><a href="index.php?page=kalender" class="itemNav whiteText paddingResp">kalender</a></li>
+          <li class="paddingResp"><a href="index.php?page=sponsor" class="itemNav whiteText paddingResp">sponsor</a></li>
         </ul>
       </nav>
     </div>
