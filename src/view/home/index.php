@@ -7,10 +7,10 @@
         <li class="itemNav marginNumbers">04</li>
       </ul>
       <div class="divHeader">
-        <img id="01" src="assets/img/artboard.jpg" alt="Fauxfête" width="1920" height="1080" class="displayImage jsclass">
-        <img id="02" src="assets/img/beverenkermis2017.jpg" alt="beverenkermis2017" width="1577" height="675" class="hiddenImages jsclass">
-        <img id="03" src="assets/img/cocktailiciouspsd.png" alt="cocktailicious" class="hiddenImages jsclass">
-        <img id="04" src="assets/img/snooker.jpg" alt="snooker activiteit" width="2000" height="1000" class="hiddenImages jsclass">
+        <img id="01" src="assets/img/doop2018.jpg" alt="doop2018" width="1920" height="1080" class="displayImage jsclass">
+        <img id="02" src="assets/img/streekbierenAvond2018.jpg" alt="beverenkermis2017" width="1577" height="675" class="hiddenImages jsclass">
+        <img id="03" src="assets/img/pool.jpg" alt="cocktailicious" class="hiddenImages jsclass">
+        <img id="04" src="assets/img/kubb.jpg" alt="snooker activiteit" width="2000" height="1000" class="hiddenImages jsclass">
       </div>
     </section>
     <article class="gridActiviteiten">

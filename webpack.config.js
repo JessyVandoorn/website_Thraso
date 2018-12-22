@@ -70,6 +70,7 @@ const commonConfig = {
               },
               // the webp option will enable WEBP
               webp: {
+                enabled: true,
                 quality: 75
               }
             },
