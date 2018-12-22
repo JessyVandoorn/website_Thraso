@@ -1,5 +1,6 @@
 const path = require(`path`);
 
+
 const ImageminPlugin = require(`imagemin-webpack-plugin`).default;
 const imageminJpegRecompress = require(`imagemin-jpeg-recompress`);
 
@@ -40,15 +41,15 @@ const commonConfig = {
     rules: [
       {
         test: /\.(jpe?g|png|gif|webp|svg)$/,
-        use: [
+        use:[
           {
             loader: `file-loader`,
             options: {
               limit: 1000,
               context: `./src`,
-              name: `[path][name].[ext]`,
-            },
-          }, {
+              name: `[path][name].[ext]`
+            }
+          },{
             loader: `image-webpack-loader`,
             options: {
               bypassOnDebug: true,
@@ -56,20 +57,23 @@ const commonConfig = {
                 progressive: true,
                 quality: 65
               },
+              // optipng.enabled: false will disable optipng
               optipng: {
-                enabled: false
+                enabled: false,
               },
               pngquant: {
-                quality: `65-90`,
+                quality: '65-90',
                 speed: 4
               },
               gifsicle: {
-                interlaced: false
+                interlaced: false,
               },
-              // https://github.com/tcoopman/image-webpack-loader/issues/111
-              webp: false
-            }
-          }
+              // the webp option will enable WEBP
+              webp: {
+                quality: 75
+              }
+            },
+          },
         ]
       },
       {
