@@ -11,8 +11,10 @@
   gtag('config', 'UA-25278195-1');
 </script>
   <meta charset="UTF-8">
+  <html lang="nl-be">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="refresh">
   <title>Hsc Thraso </title>
   <script>
     WebFontConfig = {
@@ -37,7 +39,7 @@
 <body>
 <header>
     <div class="lighterBlue">
-      <h1><a href="index.html" class="h1 whiteText">Hsc Thraso</a></h1>
+      <h1><a href="index.php" class="h1 whiteText">Hsc Thraso</a></h1>
       <nav>
         <p class="menu whiteText">Menu</p>
         <ul class="navigatie whiteText menuContent">

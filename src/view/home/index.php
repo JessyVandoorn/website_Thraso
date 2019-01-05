@@ -25,7 +25,7 @@
         </p>
       </section>
       <section class="act2 activiteit updateAct123">
-        <img src="assets/img/galabal.jpg" alt="galabal centaura" width="1920" height="1080" class="imageActiviteit">
+        <img src="assets/img/voorkant.jpg" alt="galabal centaura" width="2362" height="1181" class="imageActiviteit">
         <h3 class="orangeTitle whiteText">Galabal Centaura</h3>
         <p class="redBackground whiteText borderRadius">Jaarlijks is Thraso aanwezig op het Galabal van Hsc Centaura. Ook dit jaar gaan we terug plezier gaan maken. We trekken onze beste kledij aan en onze dansschoenen, want dansen zal er ongetwijfeld wel gedaan worden.
         </p>
