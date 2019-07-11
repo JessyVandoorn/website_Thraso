@@ -21,6 +21,7 @@ const imageminMozjpeg = require(`imagemin-mozjpeg`);
   console.log(`Images optimized`);
 })();
 
+
 // const CriticalPlugin = require(`webpack-plugin-critical`).CriticalPlugin;
 
 const PATHS = {
