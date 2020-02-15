@@ -51,7 +51,7 @@
     "whatwg-fetch": "^3.0.0"
   },
   "dependencies": {
-    "@hapi/hapi": "^18.3.1",
+    "@hapi/hapi": "^19.1.1",
     "@hapi/hoek": "^8.0.2",
     "bcrypt": "^3.0.6",
     "debug": "^4.1.1",
@@ -61,6 +61,7 @@
     "lodash": "^4.17.14",
     "lodash.merge": "^4.6.2",
     "node-google-calendar": "^1.1.1",
+    "set-value": "^3.0.1",
     "webpack-plugin-critical": "^1.0.0",
     "yarn": "^1.17.3"
   }
