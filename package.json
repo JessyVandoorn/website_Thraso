@@ -61,7 +61,7 @@
     "lodash": "^4.17.14",
     "lodash.merge": "^4.6.2",
     "node-google-calendar": "^1.1.1",
-    "set-value": "^3.0.1",
+    "set-value": "^4.0.1",
     "webpack-plugin-critical": "^1.0.0",
     "yarn": "^1.22.0"
   }
